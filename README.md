@@ -1,2 +1,2 @@
-# portfolio-v2
-Portfolio of Christopher Hullman (2022)
+# Portfolio v2 - Chris Hullman
+Portfolio of Chris Hullman (2022)
