@@ -31,34 +31,37 @@
     height: 0px;
     bottom: 0px;
     left: -20px;
-    //right: 50%;
+    right: 50%;
+
 }
 
 .wave-line {
 
-    //display: inline-block;
+    display: inline-block;
+
+    margin-right: -4px;
 
     background: $wave-color;
     width: 30px;
-    float: left;
+    //float: left;
 
     animation: wave-anim 2s infinite ease-in-out alternate;
-    //position: static;
+    position: static;
     //box-sizing: content-box;
 
     border: 1px solid $wave-color;
     border-radius: 20px 20px 0 0;
 
 
-    transform: translateY(-140px);
-    height: 140px;
+    transform: translateY(-160px);
+    height: 160px;
 
 }
 
 @keyframes wave-anim {
     0% {
-        transform: translateY(-140px);
-        height: 140px;
+        transform: translateY(-160px);
+        height: 160px;
     }
 
     100% {
