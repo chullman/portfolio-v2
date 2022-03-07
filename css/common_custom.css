@@ -5,22 +5,24 @@ html, body {
 }
 
 /* holds the entirety of the primary content */
-.main-container {
+#main-container {
   padding: 0;
   margin: 0;
   width: 100%;
   max-width: 100%;
+  height: 740px;
 }
 
-.topnav-flex-container {
+#topnav-flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
+  height: 164px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   background-color: #1A2530;
+  padding-bottom: 10px;
 }
 
 #topnav-logo {
@@ -28,23 +30,45 @@ html, body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 #topnav-logo > img {
   width: 100px;
   height: 100%;
 }
 
 #nav-hamburger-container {
-  margin-right: 20px;
+  position: relative;
 }
-
 #nav-hamburger-container > h2 {
   font-family: "Montserrat", sans-serif;
   color: #fc9e49;
+  margin-right: 20px;
 }
 
 #nav-hamburger-custom {
   color: white;
+  margin-right: 20px;
+}
+
+#hamburger-dropdown {
+  position: absolute;
+  top: 166px;
+  right: 10px;
+  width: 200px;
+  background-color: white;
+  border: 5px solid #fc9e49;
+  box-shadow: 10px 10px 10px gray;
+}
+
+#dropdown-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
+}
+#dropdown-content-container > p {
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=common_custom.css.map */
