@@ -36,13 +36,13 @@
 
 .wave-line {
 
-    display: block;
+    display: inline-block;
 
     background: $wave-color;
     width: 30px;
     float: left;
 
-    animation: wave-anim 5s infinite ease-in-out alternate;
+    animation: wave-anim 2s infinite ease-in-out alternate;
     position: static;
     box-sizing: content-box;
 
@@ -53,4 +53,16 @@
     transform: translateY(-170px);
     height: 170px;
 
+}
+
+@keyframes wave-anim {
+    0% {
+        transform: translateY(-170px);
+        height: 170px;
+    }
+
+    100% {
+        transform: translateY(-220px);
+        height: 220px;
+    }
 }

@@ -2,6 +2,8 @@ window.onload = init;
 
 function init() {
   document.getElementById("main-container").onclick = showOrHideNavDropdown;
+
+  waveLineDelay();
 }
 
 // Source referred to for help with the following onclick event handler function: https://stackoverflow.com/a/36695562
@@ -27,5 +29,20 @@ function showOrHideNavDropdown(e) {
         } else {
             hamburgerDropdown.style.display = "";
         }
+  }
+}
+
+// Adds an increasingly longer animation delay for every wave line, left to right, in the jumbotron section on Home Page, to simulate a "wave" effect
+// With reference from https://codepen.io/shane-clarke/pen/poNeeGg for help with this
+
+function waveLineDelay() {
+  var delay = 0.2;
+  var allWaveLines = document.getElementsByClassName("wave-line");
+  var waveLine = null;
+
+  for (var i = 0; i < allWaveLines.length; i++) {
+    waveLine = allWaveLines[i];
+    waveLine.style.animationDelay = delay + "s";
+    delay = delay + 0.2;
   }
 }
