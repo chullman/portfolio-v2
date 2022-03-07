@@ -1,0 +1,51 @@
+/* This will hold all the SASS styling that is common across all pages */
+
+@import "variables";
+
+/* prevents horizonal scrolling */
+html, body {
+    overflow-x: hidden;
+}
+
+/* holds the entirety of the primary content */
+.main-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .topnav-flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $navbar-background-color;
+  }
+
+  #topnav-logo {
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  #topnav-logo > img {
+      width: 100px;
+      height: 100%;
+  }
+
+  #nav-hamburger-container {
+      margin-right: 20px;
+  }
+
+  #nav-hamburger-container > h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: $aesthetic-text-color;
+  }
+
+  #nav-hamburger-custom {
+      color: $nav-hamburger-color;
+  }
