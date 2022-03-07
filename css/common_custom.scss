@@ -5,6 +5,10 @@
 /* prevents horizonal scrolling */
 html, body {
     overflow-x: hidden;
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
 
 /* holds the entirety of the primary content */
@@ -15,6 +19,10 @@ html, body {
     max-width: 100%;
     height: 740px; // TODO: Change to percentage at end
   }
+
+  /*
+  NAV BAR
+  */
 
   #topnav-flex-container {
       display: flex;
@@ -57,26 +65,31 @@ html, body {
       margin-right: 20px;
   }
 
+
   #hamburger-dropdown {
       position: absolute;
       top: 174px;
       right: 10px;
       width: 200px;
+
       
       display: none; // JS will be used to change this to block on click of the hamburger
 
-      background-color: white;
+
+
       border: 5px solid $aesthetic-border-color;
       box-shadow: 10px 10px 10px gray;
   }
 
   #dropdown-content-container {
 
+    
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
         height: 100%;
+
 
         &>p {
             width: 100%;
@@ -84,7 +97,7 @@ html, body {
             line-height: 40px;
             margin: 0;
             height: 40px;
-            z-index: 999;
+            display: inline-block;
         }
     
   }

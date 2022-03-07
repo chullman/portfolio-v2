@@ -3,6 +3,9 @@
 html, body {
   overflow-x: hidden;
 }
+html p, body p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* holds the entirety of the primary content */
 #main-container {
