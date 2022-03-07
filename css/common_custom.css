@@ -23,6 +23,7 @@ html, body {
   justify-content: space-between;
   background-color: #1A2530;
   padding-bottom: 10px;
+  position: relative;
 }
 
 #topnav-logo {
@@ -35,9 +36,6 @@ html, body {
   height: 100%;
 }
 
-#nav-hamburger-container {
-  position: relative;
-}
 #nav-hamburger-container > h2 {
   font-family: "Montserrat", sans-serif;
   color: #fc9e49;
@@ -51,9 +49,10 @@ html, body {
 
 #hamburger-dropdown {
   position: absolute;
-  top: 166px;
+  top: 174px;
   right: 10px;
   width: 200px;
+  display: none;
   background-color: white;
   border: 5px solid #fc9e49;
   box-shadow: 10px 10px 10px gray;
@@ -69,6 +68,10 @@ html, body {
 #dropdown-content-container > p {
   width: 100%;
   text-align: center;
+  line-height: 40px;
+  margin: 0;
+  height: 40px;
+  z-index: 999;
 }
 
 /*# sourceMappingURL=common_custom.css.map */
