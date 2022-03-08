@@ -141,11 +141,11 @@ INTRO SECTION
     //justify-content: center;
     margin:auto;
 
-    width: 80%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: white;
+    background-color: $introsection-background-color;
 }
 
 #intro-box > h1,
@@ -159,6 +159,7 @@ INTRO SECTION
     text-align: center;
     font-family: $body-google-font-family;
     font-size: 1.3em;
+    color: white;
 }
 
 #intro-box > h2:first-child {
@@ -172,10 +173,23 @@ INTRO SECTION
 }
 
 .stronger-h3-letters {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .intro-text-highlight {
     color: $aesthetic-text-color;
+}
+
+/*
+CARDS LINK SECTION
+*/
+
+#rope-background {
+    background-image: url(../assets/rope.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-color: white;
+
 }
 

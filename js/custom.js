@@ -40,6 +40,7 @@ function waveLineDelay() {
   var allWaveLines = document.getElementsByClassName("wave-line");
   var waveLine = null;
 
+  // For every wave line that exists, from left to right, add a higher delay value to the value of the previous line
   for (var i = 0; i < allWaveLines.length; i++) {
     waveLine = allWaveLines[i];
     waveLine.style.animationDelay = delay + "s";
