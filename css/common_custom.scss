@@ -2,8 +2,9 @@
 
 @import "variables";
 
-/* prevents horizonal scrolling */
+
 html, body {
+    /* prevents horizonal scrolling */
     overflow-x: hidden;
 
     font-family: $body-google-font-family;
@@ -22,8 +23,9 @@ html, body {
 /* holds the entirety of the primary content */
 #main-container {
     padding: 0;
-    margin: auto;
-    width: 360px; // TODO: Change to percentage at end
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     max-width: 100%;
     //height: 793px; // TODO: Change to percentage at end
   }

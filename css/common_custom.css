@@ -1,6 +1,6 @@
 /* This will hold all the SASS styling that is common across all pages */
-/* prevents horizonal scrolling */
 html, body {
+  /* prevents horizonal scrolling */
   overflow-x: hidden;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -15,8 +15,9 @@ html p, body p {
 /* holds the entirety of the primary content */
 #main-container {
   padding: 0;
-  margin: auto;
-  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   max-width: 100%;
 }
 
