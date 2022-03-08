@@ -86,6 +86,8 @@ JUMBOTRON SECTION
 
     @media only screen and (min-width: 1280px) {
         left: 300px;
+        width: 200px;
+        height: 200px;
     }
 
 }
@@ -98,7 +100,7 @@ JUMBOTRON SECTION
 
 #ship-brand-logo-withoutwave-container > #underwater-ship {
     position: absolute;
-    bottom: 0px;
+    bottom: -20px;
     @include jumbotron-ship-positioning;
     //animation: ship-water-anim 2s ease 2s infinite alternate;
     animation-name: ship-water-anim;
