@@ -1,5 +1,9 @@
 @import "variables";
 
+/*
+JUMBOTRON SECTION
+*/
+
 #jumbotron-overflow-prevention {
     position: relative;
     overflow: hidden;
@@ -122,6 +126,52 @@
 }
 
 #hull-highlight {
+    color: $aesthetic-text-color;
+}
+
+/*
+INTRO SECTION
+*/
+
+#intro-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    //justify-content: center;
+    margin:auto;
+
+    width: 80%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+#intro-box > h1,
+#intro-box > h2,
+#intro-box > h3 {
+    font-family: $primary-google-font-family;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: $body-google-font-family;
+    font-size: 1.3em;
+}
+
+#intro-box > h2:first-child {
+    font-family: $primary-google-font-family;
+    color: $aesthetic-text-color;
+    font-size: 2em;
+}
+
+.stronger-h3-letters {
+    font-size: 1.2em;
+}
+
+.intro-text-highlight {
     color: $aesthetic-text-color;
 }
 
