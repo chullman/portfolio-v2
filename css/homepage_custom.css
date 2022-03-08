@@ -61,6 +61,11 @@ JUMBOTRON SECTION
   width: 150px;
   height: 150px;
 }
+@media only screen and (min-width: 1280px) {
+  #ship-brand-logo-withoutwave-container > #ship-brand-logo-withoutwave {
+    left: 300px;
+  }
+}
 
 #ship-brand-logo-withoutwave-container > #underwater-ship {
   position: absolute;
@@ -73,6 +78,11 @@ JUMBOTRON SECTION
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-direction: alternate;
+}
+@media only screen and (min-width: 1280px) {
+  #ship-brand-logo-withoutwave-container > #underwater-ship {
+    left: 300px;
+  }
 }
 
 @keyframes ship-water-anim {
