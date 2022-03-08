@@ -133,6 +133,10 @@ INTRO SECTION
   font-size: 2em;
 }
 
+#intro-box > h2:nth-child(2) {
+  font-size: 2em;
+}
+
 .stronger-h3-letters {
   font-size: 1.2em;
 }
