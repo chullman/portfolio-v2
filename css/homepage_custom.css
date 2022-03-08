@@ -28,7 +28,8 @@
 
 .wave-line {
   display: inline-block;
-  margin-right: -4px;
+  margin-right: -5px;
+  margin-left: -5px;
   background: #034078;
   width: 30px;
   animation: wave-anim 2s infinite ease-in-out alternate;
