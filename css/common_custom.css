@@ -12,25 +12,27 @@ html p, body p {
   font-size: 1.2em;
 }
 
+#desktop-view-background {
+  background-image: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 /* holds the entirety of the primary content */
 #main-container {
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   max-width: 100%;
 }
 
-/*
-@media (min-width: 578px) {
-  .main-container {
+@media only screen and (min-width: 1280px) {
+  #main-container {
     margin-left: auto;
     margin-right: auto;
-    // max-width: 960px;
     max-width: 1280px;
   }
 }
-*/
 /*
 NAV BAR
 */

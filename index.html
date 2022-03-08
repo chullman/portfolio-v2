@@ -31,191 +31,195 @@
 
 </head>
 <body>
-    <div id="main-container">
 
-        <nav id="topnav-flex-container">
-            <div id="topnav-logo">
-                <img src="/assets/brand_logo.svg" alt="Ship Brand Logo">
-            </div>
-            <div id="nav-hamburger-container">
-                <h2>Links:</h2>
-                <i class="fa-solid fa-bars fa-5x" id="nav-hamburger-custom"></i>
-            </div>
-            
-            <div id="hamburger-dropdown">
-                <div id="dropdown-content-container">
-                    <p>Menu item 1</p>
-                    <p>Menu item 2</p>
-                    <p>Menu item 3</p>
-                    <p>Menu item 4</p>
-                    <p>Menu item 5</p>
-                    <p>Menu item 6</p>
+    <div id="desktop-view-background">
+
+        <div id="main-container">
+
+            <nav id="topnav-flex-container">
+                <div id="topnav-logo">
+                    <img src="/assets/brand_logo.svg" alt="Ship Brand Logo">
                 </div>
-            </div>
-        </nav>
-
-        <div id="jumbotron-overflow-prevention">
-            <section id="jumbotron">
-
-                <div id="jumbotron-headings">
-                    <h1><span class="stronger-h1-letters">C</span>hris <span class="stronger-h1-letters" id="hull-highlight">H</span><span id="hull-highlight">ull</span>man</h1>
-                    <h2>Career Portfolio</h2>
-                </div>
-                <div id="wave-container">
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
-                    <div class="wave-line"></div>
+                <div id="nav-hamburger-container">
+                    <h2>Links:</h2>
+                    <i class="fa-solid fa-bars fa-5x" id="nav-hamburger-custom"></i>
                 </div>
                 
-            </section>
-            <div  id="ship-brand-logo-withoutwave-container">
-                <!-- For SVG files I "believe" a seperate DOCTYPE and XML declaration is required in the svg as per referenced here: https://oreillymedia.github.io/Using_SVG/extras/ch01-XML.html
-                and here: https://stackoverflow.com/questions/38169475/svg-in-html5-when-is-xml-declaration-xml-version-1-0-encoding-utf-8/38172170 -->
-                <object data="/assets/brand_logo_nowave_plainsvg.svg" type="image/svg+xml" id="ship-brand-logo-withoutwave">
-                    <!-- Because "objects" are not recognised in image searches for SEO, there is a fallback "img" tag below -->
-                    <!-- Reference: https://vecta.io/blog/best-way-to-embed-svg -->
-                    <img src="/assets/brand_logo_nowave_plainsvg.svg" alt="Ship Brand Logo">
-                </object>
-                <object data="/assets/underwater_ship_plainsvg.svg" type="image/svg+xml" id="underwater-ship">
-                    <img src="/assets/underwater_ship_plainsvg.svg" alt="Underwater Ship Animation">
-                </object>
-                
-            </div>
-        </div>
-
-        <aside id="intro-box">
-            <h2>Hello!</h2>
-            <h2 class="intro-text-highlight">I'm Chris</h2>
-            <h3>I'm a <span class="stronger-h3-letters intro-text-highlight">student web developer</span></h3>
-            <h3>and an <span class="stronger-h3-letters intro-text-highlight">aspiring IT professional</span></h3>
-            <h3><span class="intro-text-highlight">&lt; read more <i class="fa-solid fa-arrow-down"></i>  &gt;</span></h3>
-        </aside>
-
-        <div id="rope-background">
-            <main id="cards-container">
-                <div>
-                  <div class="thumb" style="background-image: url(/assets/html_css_logo.png);"></div>
-                  <div class="card-bottom-half">
-                    <h5 class="card-title">> HTML and CSS Development</h5>
-                    <p class="card-description">Read about my involvement in HTML and CSS for full-stack web development!</p>
-                    <div class="button button-primary">GO</div>
-                  </div>
-                  <a href="subpages/webdev.html" class="card-wrap"></a>
-                </div>
-                <div>
-                  <div class="thumb" style="background-image: url(assets/csharp_logo.png);"></div>
-                  <div class="card-bottom-half">
-                    <h5 class="card-title">> C# and .NET Development</h5>
-                    <p class="card-description">Read and see all about my back-end development works in C# on the .NET framework!</p>
-                    <div class="button button-primary">GO</div>
-                  </div>
-                  <a href="subpages/csharp.html" class="card-wrap"></a>
-                </div>
-                <div>
-                  <div class="thumb" style="background-image: url(assets/infrastructure_logo.png);"></div>
-                  <div class="card-bottom-half">
-                    <h5 class="card-title">> Infrastructure Admin & Support</h5>
-                    <p class="card-description">I have experience and certifications in providing server, network and desktop administration and support! Read about it here!</p>
-                    <div class="button button-primary">GO</div>
-                  </div>
-                  <a href="subpages/infrastructure.html" class="card-wrap"></a>
-                </div>
-                <div>
-                    <div id="blog-logo"><i class="fa-solid fa-book fa-10x"></i></div>
-                    <div id="blog-card-bottom-half">
-                        <h1>Blog</h1>
-                        <div class="button button-primary">GO</div>
-                        <h3>&lt;anchor /&gt;</h3>
+                <div id="hamburger-dropdown">
+                    <div id="dropdown-content-container">
+                        <p>Menu item 1</p>
+                        <p>Menu item 2</p>
+                        <p>Menu item 3</p>
+                        <p>Menu item 4</p>
+                        <p>Menu item 5</p>
+                        <p>Menu item 6</p>
                     </div>
-                    <a href="subpages/blog.html" class="card-wrap"></a>
-                  </div>
-                <div class="about-card">
-                  <h1>About Me</h1>
-                  <div class="button button-primary">GO</div>
-                  <h3>&lt;anchor /&gt;</h3>
-                  <a href="subpages/aboutme.html" class="card-wrap"></a>
                 </div>
-              </main>
-        </div>
+            </nav>
 
-        <footer class="footer-container">
-            <div id="footer-container-left">
-              <h1>Contact Me</h1>
-              <h3>&lt;dock /&gt;</h3>
+            <div id="jumbotron-overflow-prevention">
+                <section id="jumbotron">
+
+                    <div id="jumbotron-headings">
+                        <h1><span class="stronger-h1-letters">C</span>hris <span class="stronger-h1-letters" id="hull-highlight">H</span><span id="hull-highlight">ull</span>man</h1>
+                        <h2>Career Portfolio</h2>
+                    </div>
+                    <div id="wave-container">
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                        <div class="wave-line"></div>
+                    </div>
+                    
+                </section>
+                <div  id="ship-brand-logo-withoutwave-container">
+                    <!-- For SVG files I "believe" a seperate DOCTYPE and XML declaration is required in the svg as per referenced here: https://oreillymedia.github.io/Using_SVG/extras/ch01-XML.html
+                    and here: https://stackoverflow.com/questions/38169475/svg-in-html5-when-is-xml-declaration-xml-version-1-0-encoding-utf-8/38172170 -->
+                    <object data="/assets/brand_logo_nowave_plainsvg.svg" type="image/svg+xml" id="ship-brand-logo-withoutwave">
+                        <!-- Because "objects" are not recognised in image searches for SEO, there is a fallback "img" tag below -->
+                        <!-- Reference: https://vecta.io/blog/best-way-to-embed-svg -->
+                        <img src="/assets/brand_logo_nowave_plainsvg.svg" alt="Ship Brand Logo">
+                    </object>
+                    <object data="/assets/underwater_ship_plainsvg.svg" type="image/svg+xml" id="underwater-ship">
+                        <img src="/assets/underwater_ship_plainsvg.svg" alt="Underwater Ship Animation">
+                    </object>
+                    
+                </div>
             </div>
-            <div id="footer-container-right">
-              <ul>
-                <li>
-                    <a href="assets/Resume_of_Christopher_Hullman_Coder_Academy_MOCK.pdf" target="_blank">
-                    <span><i class="fa-solid fa-file-lines"></i></span>
-                    <span class="contact-text">Resume PDF</span>
+
+            <aside id="intro-box">
+                <h2>Hello!</h2>
+                <h2 class="intro-text-highlight">I'm Chris</h2>
+                <h3>I'm a <span class="stronger-h3-letters intro-text-highlight">student web developer</span></h3>
+                <h3>and an <span class="stronger-h3-letters intro-text-highlight">aspiring IT professional</span></h3>
+                <h3><span class="intro-text-highlight">&lt; read more <i class="fa-solid fa-arrow-down"></i>  &gt;</span></h3>
+            </aside>
+
+            <div id="rope-background">
+                <main id="cards-container">
+                    <div>
+                    <div class="thumb" style="background-image: url(/assets/html_css_logo.png);"></div>
+                    <div class="card-bottom-half">
+                        <h5 class="card-title">> HTML and CSS Development</h5>
+                        <p class="card-description">Read about my involvement in HTML and CSS for full-stack web development!</p>
+                        <div class="button button-primary">GO</div>
+                    </div>
+                    <a href="subpages/webdev.html" class="card-wrap"></a>
+                    </div>
+                    <div>
+                    <div class="thumb" style="background-image: url(assets/csharp_logo.png);"></div>
+                    <div class="card-bottom-half">
+                        <h5 class="card-title">> C# and .NET Development</h5>
+                        <p class="card-description">Read and see all about my back-end development works in C# on the .NET framework!</p>
+                        <div class="button button-primary">GO</div>
+                    </div>
+                    <a href="subpages/csharp.html" class="card-wrap"></a>
+                    </div>
+                    <div>
+                    <div class="thumb" style="background-image: url(assets/infrastructure_logo.png);"></div>
+                    <div class="card-bottom-half">
+                        <h5 class="card-title">> Infrastructure Admin & Support</h5>
+                        <p class="card-description">I have experience and certifications in providing server, network and desktop administration and support! Read about it here!</p>
+                        <div class="button button-primary">GO</div>
+                    </div>
+                    <a href="subpages/infrastructure.html" class="card-wrap"></a>
+                    </div>
+                    <div>
+                        <div id="blog-logo"><i class="fa-solid fa-book fa-10x"></i></div>
+                        <div id="blog-card-bottom-half">
+                            <h1>Blog</h1>
+                            <div class="button button-primary">GO</div>
+                            <h3>&lt;anchor /&gt;</h3>
+                        </div>
+                        <a href="subpages/blog.html" class="card-wrap"></a>
+                    </div>
+                    <div class="about-card">
+                    <h1>About Me</h1>
+                    <div class="button button-primary">GO</div>
+                    <h3>&lt;anchor /&gt;</h3>
+                    <a href="subpages/aboutme.html" class="card-wrap"></a>
+                    </div>
+                </main>
+            </div>
+
+            <footer class="footer-container">
+                <div id="footer-container-left">
+                <h1>Contact Me</h1>
+                <h3>&lt;dock /&gt;</h3>
+                </div>
+                <div id="footer-container-right">
+                <ul>
+                    <li>
+                        <a href="assets/Resume_of_Christopher_Hullman_Coder_Academy_MOCK.pdf" target="_blank">
+                        <span><i class="fa-solid fa-file-lines"></i></span>
+                        <span class="contact-text">Resume PDF</span>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="mailto:cab011818@coderacademy.edu.au">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <span class="contact-text">cab011818@coderacademy.edu.au</span>
                     </a>
-                </li>
-                <li>
-                  <a href="mailto:cab011818@coderacademy.edu.au">
-                  <span><i class="fa-solid fa-envelope"></i></span>
-                  <span class="contact-text">cab011818@coderacademy.edu.au</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/chris.hullman" target="_blank">
-                  <span><i class="fa-brands fa-facebook-square"></i></span>
-                  <span class="contact-text">facebook.com/chris.hullman</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/christopher-hullman/" target="_blank">
-                  <span><i class="fa-brands fa-linkedin"></i></span>
-                  <span class="contact-text">linkedin.com/in/christopher-hullman</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/chullman" target="_blank">
-                  <span><i class="fa-brands fa-github-square"></i></span>
-                  <span class="contact-text">github.com/chullman</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://medium.com/@chrishullman" target="_blank">
-                  <span><i class="fa-solid fa-book"></i></span>
-                  <span class="contact-text">medium.com/@chrishullman</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </footer>
-       
+                    </li>
+                    <li>
+                    <a href="https://www.facebook.com/chris.hullman" target="_blank">
+                    <span><i class="fa-brands fa-facebook-square"></i></span>
+                    <span class="contact-text">facebook.com/chris.hullman</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://www.linkedin.com/in/christopher-hullman/" target="_blank">
+                    <span><i class="fa-brands fa-linkedin"></i></span>
+                    <span class="contact-text">linkedin.com/in/christopher-hullman</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://github.com/chullman" target="_blank">
+                    <span><i class="fa-brands fa-github-square"></i></span>
+                    <span class="contact-text">github.com/chullman</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://medium.com/@chrishullman" target="_blank">
+                    <span><i class="fa-solid fa-book"></i></span>
+                    <span class="contact-text">medium.com/@chrishullman</span>
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </footer>
+        
+        </div>
     </div>
 </body>
 </html>
