@@ -3,8 +3,16 @@
 html, body {
   overflow-x: hidden;
 }
-html p, body p {
+html p, html h1, body p, body h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stronger-h1-letters {
+  font-size: 1.2em;
+}
+
+.center-headings {
+  text-align: center;
 }
 
 /* holds the entirety of the primary content */
@@ -16,6 +24,9 @@ html p, body p {
   height: 740px;
 }
 
+/*
+NAV BAR
+*/
 #topnav-flex-container {
   display: flex;
   flex-direction: row;
@@ -55,8 +66,9 @@ html p, body p {
   top: 174px;
   right: 10px;
   width: 200px;
-  display: none;
   background-color: white;
+  z-index: 1;
+  display: none;
   border: 5px solid #fc9e49;
   box-shadow: 10px 10px 10px gray;
 }
@@ -74,7 +86,7 @@ html p, body p {
   line-height: 40px;
   margin: 0;
   height: 40px;
-  z-index: 999;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=common_custom.css.map */

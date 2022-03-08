@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="534.74976"
+   height="660.15979"
+   viewBox="0 0 534.74976 660.15979"
+   enable-background="new 0 0 612 792"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs28" />
+<path
+   id="ship_x5F_stroke"
+   fill="#010101"
+   d="m 45.936,366.901 201.158,-50.977 v 311.914 l 40.806,0.414 c -10e-4,-0.041 -0.006,-0.081 -0.006,-0.124 V 315.924 l 200.92973,51.45653 c -8.028,50.993 -57.16384,213.74073 -112.50084,292.55173 l 55.91794,-0.0571 18.2329,-31.40658 c 61.753,-110.444 80.855,-267.885 81.803,-275.959 l 2.473,-21.153 L 491.894,319.96 V 186.111 h -40.8 V 93.056 h -122.4 V 69.792 C 328.694,31.309 301.24,0 267.494,0 c -33.746,0 -61.2,31.309 -61.2,69.792 v 23.264 h -122.4 v 93.055 h -40.8 V 319.96 L 0,330.88 2.472,352.036 c 0.945,8.073 20.063,165.642 81.876,276.091 h -0.454 c 0,0.138 19.04537,31.71927 19.04337,31.85327 l 168.15024,-0.14547 c 39.96554,-0.36301 71.74015,0.51372 93.9314,0.28697 C 655.48824,657.15385 53.399015,414.15128 45.936,366.901 Z M 369.494,139.584 h 40.8 v 46.527 h -40.8 z m -40.8,0 v 46.527 h -40.8 v -46.527 z m -81.6,-69.792 c 0,-12.829 9.151,-23.265 20.4,-23.265 11.249,0 20.4,10.437 20.4,23.265 v 23.264 h -40.8 z m -40.8,69.792 h 40.8 v 46.527 h -40.8 z m -81.6,0 h 40.8 v 46.527 h -40.8 z m -40.8,93.056 h 367.2 v 76.979 l -183.6,-46.528 -183.6,46.528 z" />
+<polyline
+   id="left_x5F_hull_x5F_whitespace"
+   fill="#fc9e49"
+   points="285.6,386.894 84.442,437.871 103.5,582 172.59,698.878   285.6,698.808 "
+   transform="translate(-38.506,-70.97)" />
+<polyline
+   id="right_x5F_hull_x5F_whitespace"
+   fill="#fc9e49"
+   points="326.441,386.894 527.6,437.871 508.541,582 439.451,698.878   326.441,698.808 "
+   transform="translate(-38.506,-70.97)" />
+<polyline
+   id="misc_x5F_whitespace1"
+   fill="#ffffff"
+   points="489.6,380.59 489.6,303.61 122.4,303.61 122.4,380.589 306,338.5 "
+   transform="translate(-38.506,-70.97)" />
+<polyline
+   id="misc_x5F_whitespace2"
+   fill="#ffffff"
+   points="448.8,257.081 448.8,210.554 408,210.554 408,257.081 "
+   transform="translate(-38.506,-70.97)" />
+<polyline
+   id="misc_x5F_whitespace3"
+   fill="#FFFFFF"
+   points="367.2,257.081 367.2,210.554 326.4,210.554 326.4,257.081 "
+   style="fill:#ffffff;fill-opacity:1"
+   transform="translate(-38.506,-70.97)" />
+<polyline
+   id="misc_x5F_whitespace4"
+   fill="#ffffff"
+   points="285.6,257.081 285.6,210.554 244.8,210.554 244.8,257.081 "
+   transform="translate(-38.506,-70.97)" />
+<polyline
+   id="misc_x5F_whitespace5"
+   fill="#ffffff"
+   points="204,257.081 204,210.554 163.2,210.554 163.2,257.081 "
+   transform="translate(-38.506,-70.97)" />
+<polyline
+   id="misc_x5F_whitespace6"
+   fill="#ffffff"
+   points="285.6,164.026 326.4,164.026 330.167,135.333 304.5,94.333   281.5,136.667 "
+   transform="translate(-38.506,-70.97)" />
+<path
+   id="misc_x5F_whitespace7"
+   fill="#34b44a"
+   d="M 267.494,46.527" />
+
+</svg>

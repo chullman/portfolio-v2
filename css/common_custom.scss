@@ -6,9 +6,17 @@
 html, body {
     overflow-x: hidden;
 
-    p {
+    p, h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+}
+
+.stronger-h1-letters {
+    font-size: 1.2em;
+}
+
+.center-headings {
+    text-align: center;
 }
 
 /* holds the entirety of the primary content */
@@ -71,6 +79,9 @@ html, body {
       top: 174px;
       right: 10px;
       width: 200px;
+
+      background-color: white;
+      z-index: 1; // Ensure the dropdown is always on the front of all other page graphics
 
       
       display: none; // JS will be used to change this to block on click of the hamburger

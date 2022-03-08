@@ -6,13 +6,14 @@
 #jumbotron {
   position: relative;
   left: 0;
-  z-index: -1;
+  z-index: 0;
+  margin: 0;
   background-image: url("../assets/jumbotron_background_transparent.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  width: 1000px;
-  height: 300px;
+  width: 1920px;
+  height: 350px;
   background-color: white;
 }
 
@@ -47,6 +48,50 @@
     transform: translateY(-190px);
     height: 190px;
   }
+}
+#ship-brand-logo-withoutwave-container > #ship-brand-logo-withoutwave {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  width: 150px;
+  height: 150px;
+}
+
+#ship-brand-logo-withoutwave-container > #underwater-ship {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  width: 150px;
+  height: 150px;
+  animation-name: ship-water-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes ship-water-anim {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+#jumbotron-headings {
+  position: relative;
+  width: 18%;
+  margin: 0;
+}
+
+#jumbotron-headings h1, #jumbotron-headings h2 {
+  text-align: center;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#hull-highlight {
+  color: #fc9e49;
 }
 
 /*# sourceMappingURL=homepage_custom.css.map */

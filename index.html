@@ -55,6 +55,11 @@
 
         <div id="jumbotron-overflow-prevention">
             <section id="jumbotron">
+
+                <div id="jumbotron-headings">
+                    <h1><span class="stronger-h1-letters">C</span>hris <span class="stronger-h1-letters" id="hull-highlight">H</span><span id="hull-highlight">ull</span>man</h1>
+                    <h2>Career Portfolio</h2>
+                </div>
                 <div id="wave-container">
                     <div class="wave-line"></div>
                     <div class="wave-line"></div>
@@ -70,7 +75,22 @@
                     <div class="wave-line"></div>
                     <div class="wave-line"></div>
                 </div>
+                
             </section>
+            <div  id="ship-brand-logo-withoutwave-container">
+                <!-- For SVG files I "believe" a seperate DOCTYPE and XML declaration is required in the svg as per referenced here: https://oreillymedia.github.io/Using_SVG/extras/ch01-XML.html
+                and here: https://stackoverflow.com/questions/38169475/svg-in-html5-when-is-xml-declaration-xml-version-1-0-encoding-utf-8/38172170 -->
+                <object data="/assets/brand_logo_nowave_plainsvg.svg" type="image/svg+xml" id="ship-brand-logo-withoutwave">
+                    <!-- Because "objects" are not recognised in image searches for SEO, there is a fallback "img" tag below -->
+                    <!-- Reference: https://vecta.io/blog/best-way-to-embed-svg -->
+                    <img src="/assets/brand_logo_nowave_plainsvg.svg" alt="Ship Brand Logo">
+                </object>
+                <object data="/assets/underwater_ship_plainsvg.svg" type="image/svg+xml" id="underwater-ship">
+                    <img src="/assets/underwater_ship_plainsvg.svg" alt="Underwater Ship Animation">
+                </object>
+                
+            </div>
+            
         </div>
        
     </div>
