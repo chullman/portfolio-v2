@@ -187,13 +187,18 @@ html, body {
         height: 100%;
 
 
-        &>p {
+        &>a {
+            border-top: $aesthetic-border-color solid 1px;
+            border-bottom: $aesthetic-border-color solid 1px;
             width: 100%;
             text-align: center;
             line-height: 40px;
             margin: 0;
             height: 40px;
             display: inline-block;
+
+            text-decoration: none;
+            text-transform: uppercase;
         }
     
   }

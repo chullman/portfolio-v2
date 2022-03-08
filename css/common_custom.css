@@ -146,13 +146,17 @@ NAV BAR
   align-items: flex-start;
   height: 100%;
 }
-#dropdown-content-container > p {
+#dropdown-content-container > a {
+  border-top: #fc9e49 solid 1px;
+  border-bottom: #fc9e49 solid 1px;
   width: 100%;
   text-align: center;
   line-height: 40px;
   margin: 0;
   height: 40px;
   display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*

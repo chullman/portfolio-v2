@@ -13,13 +13,13 @@ function showOrHideNavDropdown(e) {
   // Check if the user clicks anywhere on the page except for the hamburger button, or one of the P links in the link dropdown box,
   // and if so, hide the dropdown box
   if (e.target != hamburgerButton) {
-    // This should be a "for" or "forEach" loop for each paragraph (i.e. link in the dropdown), but I don't know how yet - Chris Hullman
-    if (e.target != document.getElementById("dropdown-content-container").getElementsByTagName("p")[0] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("p")[1] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("p")[2] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("p")[3] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("p")[4] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("p")[5]) {
+    // This should be a "for" or "forEach" loop for each anchor tag (i.e. link in the dropdown), but I don't know how yet - Chris Hullman
+    if (e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[0] &&
+        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[1] &&
+        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[2] &&
+        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[3] &&
+        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[4] &&
+        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[5]) {
             hamburgerDropdown.style.display = "";
         }
     // Else if the user clicks on the hamburger button, show or hide the link dropdown box depending on whether it's currently displaying or not
