@@ -2,8 +2,9 @@
 /* prevents horizonal scrolling */
 html, body {
   overflow-x: hidden;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-html p, html h1, body p, body h1 {
+html p, body p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -14,7 +15,7 @@ html p, html h1, body p, body h1 {
 /* holds the entirety of the primary content */
 #main-container {
   padding: 0;
-  margin: 0;
+  margin: auto;
   width: 360px;
   max-width: 100%;
 }
@@ -94,6 +95,9 @@ NAV BAR
   display: inline-block;
 }
 
+/*
+CARDS - COMMON STYLING
+*/
 .card-wrap {
   position: absolute;
   top: 0;
@@ -101,6 +105,100 @@ NAV BAR
   width: 100%;
   height: 100%;
   display: inline;
+}
+
+/*
+CONTACT ME FOOTER
+*/
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  border-bottom: 5px solid #b3b3b3;
+  border-top: 5px solid #b3b3b3;
+  background-color: #034078;
+}
+.footer-container ul {
+  display: block;
+  position: relative;
+  width: 100%;
+  list-style-position: inside;
+}
+.footer-container li {
+  position: relative;
+  display: block;
+  list-style-type: none;
+  width: 100%;
+}
+.footer-container a {
+  text-decoration: none;
+}
+.footer-container span {
+  color: white;
+  height: 200px;
+  font-size: 2em;
+  text-align: left;
+}
+.footer-container .contact-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: auto 0 0 0;
+  transform: translateY(10px);
+}
+
+#footer-container-right {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 500px;
+  height: 100%;
+  padding-top: 10px;
+}
+#footer-container-right .fa-brands, #footer-container-right .fa-solid {
+  margin-right: 10px;
+}
+#footer-container-right li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#footer-container-left {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  align-items: center;
+  width: 400px;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#footer-container-left > h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+}
+#footer-container-left > h3 {
+  color: #fc9e49;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=common_custom.css.map */
