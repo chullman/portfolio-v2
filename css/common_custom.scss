@@ -203,10 +203,55 @@ html, body {
     
   }
 
+/*
+FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
+*/
+
+.contact-fixed-sidebar {
+    display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+    .contact-fixed-sidebar {
+        display: block;
+        position: fixed;
+        left: 0px;
+        padding-left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 35%;
+        list-style-type: none;
+        z-index: 1;
+    }
+
+    .contact-fixed-sidebar a {
+        text-decoration: none;
+        display: block;
+    }
+
+    .contact-fixed-sidebar li {
+        //margin-bottom: 0;
+    }
+
+    .contact-fixed-sidebar i {
+
+        text-align: center;
+        background-color: #293345;
+        width: 40px;
+        color: white;
+        height: 100%;
+        font-size: 2em;
+        padding: 10px;
+
+    }
+
+}
+
   
-  /*
-  CARDS - COMMON STYLING
-  */
+/*
+CARDS - COMMON STYLING
+*/
 
 // Transparently overlays the entire card to make the entire card a clickable anchor link - not just the card's button
 .card-wrap {
