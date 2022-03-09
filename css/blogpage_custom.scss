@@ -96,5 +96,22 @@
             text-align: center;
         }
     }
+
+    .alternate-order {
+        .blog-post-image-container {
+            order: 1;
+        }
+        .blog-post-divider-line {
+            order: 2;
+        }
+        .blog-post-text-container {
+            order: 3;
+            
+            &>p {
+                border-left: 7px solid $aesthetic-border-color;
+                border-right: 0;
+            }
+        }
+    }
     
 }

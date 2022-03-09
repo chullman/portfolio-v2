@@ -76,6 +76,20 @@
     max-width: 95%;
     text-align: center;
   }
+
+  .alternate-order .blog-post-image-container {
+    order: 1;
+  }
+  .alternate-order .blog-post-divider-line {
+    order: 2;
+  }
+  .alternate-order .blog-post-text-container {
+    order: 3;
+  }
+  .alternate-order .blog-post-text-container > p {
+    border-left: 7px solid #fc9e49;
+    border-right: 0;
+  }
 }
 
 /*# sourceMappingURL=blogpage_custom.css.map */
