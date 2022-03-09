@@ -233,6 +233,12 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
 
     }
 
+    @media only screen and (max-height: 480px) {
+        #contact-fixed-sidebar {
+            top: 0;
+        }
+    }
+
     #contact-fixed-sidebar li:hover {
         .contact-fixed-sidebar-dialogbox {
             display: block;
