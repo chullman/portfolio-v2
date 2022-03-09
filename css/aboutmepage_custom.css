@@ -131,7 +131,7 @@
   padding-bottom: 5px;
   padding-top: 5px;
   padding-left: 5px;
-  background-color: #293345;
+  background-color: #1A2530;
 }
 
 .list-content > p {
@@ -160,12 +160,18 @@
 .generic-flex-container > h1:first-child {
   align-self: center;
   justify-self: center;
+  text-align: center;
 }
 .generic-flex-container > h1:nth-child(2), .generic-flex-container > h1:nth-child(4) {
   padding-left: 5%;
 }
 .generic-flex-container > h3 {
   padding-left: 5%;
+}
+.generic-flex-container > p {
+  font-size: 1.2em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /*# sourceMappingURL=aboutmepage_custom.css.map */
