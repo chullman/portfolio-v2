@@ -164,7 +164,7 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
   display: none;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1360px) {
   #contact-fixed-sidebar {
     display: block;
     position: fixed;
@@ -182,12 +182,12 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
     position: relative;
   }
 }
-@media only screen and (min-width: 1280px) and (max-height: 480px) {
+@media only screen and (min-width: 1360px) and (max-height: 480px) {
   #contact-fixed-sidebar {
     top: 0;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1360px) {
   #contact-fixed-sidebar li:hover .contact-fixed-sidebar-dialogbox {
     display: block;
     position: absolute;
@@ -204,13 +204,13 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
     padding: 10px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1360px) {
   #contact-fixed-sidebar a {
     text-decoration: none;
     display: block;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1360px) {
   #contact-fixed-sidebar i {
     text-align: center;
     background-color: #1A2530;
