@@ -150,11 +150,42 @@
     font-size: 1.1em;
 }
 
-
-
 .year-text {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 8px;
+}
+
+
+
+.see-myself {
+    padding-left: 2%;
+    padding-right: 2%;
+
+    li {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+}
+
+.generic-flex-container {
+
+    &>h1 {
+        font-size: 2em;
+    }
+
+    &>h1:first-child {
+        align-self: center;
+        justify-self: center;
+    }
+
+    &>h1:nth-child(2), &>h1:nth-child(4) {
+        padding-left: 5%;
+    }
+
+    &>h3 {
+        padding-left: 5%;
+    }
+    
 }
