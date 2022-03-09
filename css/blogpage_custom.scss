@@ -74,6 +74,10 @@
         
         
     }
+
+    // For some reason, I don't know why, I can get the line to display horizontally fine,
+    // but when converted to a vertical line for desktop view, nothing shows. 
+    // So I just set the display to "none" and used a solid border on the blog post paragraph instead
     .blog-post-divider-line {
         display: none;
     }
