@@ -1,1 +1,66 @@
 @import "variables";
+
+#tag-and-portrait-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    background-color: white;
+}
+
+#tag-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    li {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+#portrait-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2%;
+    height: 100%;
+    width: 100%;
+
+    &>img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #tag-and-portrait-container {
+        flex-direction: row;
+        //flex-wrap: wrap;
+        width: 735px;
+        height: 450px;
+    }
+
+    #portrait-container {
+        margin: 0;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #tag-container {
+        padding-left: 40px;
+    }
+}
