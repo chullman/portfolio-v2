@@ -44,6 +44,7 @@ NAV BAR
   background-color: #1A2530;
   padding-bottom: 10px;
   position: relative;
+  padding-bottom: 0;
 }
 
 #topnav-logo {
@@ -130,7 +131,7 @@ NAV BAR
   right: 10px;
   width: 200px;
   background-color: white;
-  z-index: 1;
+  z-index: 3;
   display: none;
   border: 5px solid #fc9e49;
   box-shadow: 10px 10px 10px gray;
@@ -172,7 +173,7 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
     margin: 0;
     top: 35%;
     list-style-type: none;
-    z-index: 1;
+    z-index: 3;
   }
   #contact-fixed-sidebar .contact-fixed-sidebar-dialogbox {
     display: none;

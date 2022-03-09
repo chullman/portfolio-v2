@@ -56,6 +56,7 @@ html, body {
       background-color: $navbar-background-color;
       padding-bottom: 10px;
       position: relative;
+      padding-bottom: 0;
   }
 
   #topnav-logo {
@@ -163,7 +164,7 @@ html, body {
       width: 200px;
 
       background-color: white;
-      z-index: 1; // Ensure the dropdown is always on the front of all other page graphics
+      z-index: 3; // Ensure the dropdown is always on the front of all other page graphics
 
       
       display: none; // JS will be used to change this to block on click of the hamburger
@@ -220,7 +221,7 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
         margin: 0;
         top: 35%;
         list-style-type: none;
-        z-index: 1;
+        z-index: 3;
 
         .contact-fixed-sidebar-dialogbox {
             display: none;

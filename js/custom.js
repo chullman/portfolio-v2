@@ -1,6 +1,7 @@
 window.onload = init;
 
 function init() {
+
   document.getElementById("main-container").onclick = showOrHideNavDropdown;
 
   waveLineDelay();
