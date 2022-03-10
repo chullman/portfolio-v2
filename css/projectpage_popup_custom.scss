@@ -27,11 +27,14 @@
     overflow-y: scroll;
   }
   
-  
-  .project-popup:target {
+//   The CSS :target pseudo-selector in CSS matches when the hash in the URL and the id of an element are the same
+//   Reference: https://css-tricks.com/css-target/
+//   e.g. when the URL is webdev.html#open-project-popup-1, the below :target pseudo-selector will find the element with the id open-project-popup-1
+
+:target {
 
     //opacity: 1;
-
+    // Show the popup in its entirety
     display: block;
 
     //pointer-events: auto;
