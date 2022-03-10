@@ -19,8 +19,7 @@ function showOrHideNavDropdown(e) {
         e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[1] &&
         e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[2] &&
         e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[3] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[4] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[5]) {
+        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[4]) {
             hamburgerDropdown.style.display = "";
         }
     // Else if the user clicks on the hamburger button, show or hide the link dropdown box depending on whether it's currently displaying or not
