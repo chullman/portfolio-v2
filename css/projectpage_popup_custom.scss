@@ -1,0 +1,154 @@
+@import "variables";
+
+
+.project-popup {
+
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 4;
+  
+    //opacity: 0;
+
+    display: none;
+
+    // Because this fixed popup window covers the entire screen on HTML load, we don't want anything on the popup to be interactable or clickable until the user
+    // wants to navigate to the project popup
+    //pointer-events: none;
+  
+    overflow-y: scroll;
+  }
+  
+  
+  .project-popup:target {
+
+    //opacity: 1;
+
+    display: block;
+
+    //pointer-events: auto;
+  }
+  
+  .project-popup>div {
+    position: relative;
+    //padding: 2rem;
+  }
+  
+  .project-popup .close-project-popup
+  {
+    position: relative;
+    float: right;
+    //transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  
+  @media only screen and (min-width: 768px) {
+    .project-popup {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1280px;
+    }
+  }
+  
+  .fa-window-close {
+      font-size: 2em;
+      color: #FC9E49;
+      background-color: #293345; 
+      padding-right: 20px;
+      padding-top: 25%;
+  }
+  
+  .popup-header {
+      width: 100%;
+      height: 100px;
+      background-color: #293345;
+  }
+  
+  .project-popup>div {
+      padding: 0;
+  }
+  
+  .popup-content {
+      padding: 5% 5% 5% 5%;
+  }
+  
+  
+  .popup-content > p {
+      font-size: 1.2em;
+      
+  }
+  
+  .popup-content > h4 {
+      color: black;
+  }
+  
+  .popup-content li {
+      font-size: 1.2em;
+  }
+  
+  .popup-content .popup-content-border {
+      border-bottom: 5px solid #FC9E49;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      width: 100%;
+  }
+  
+  .project-screenshots {
+      display: -webkit-box;
+      display: flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: -o-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      -webkit-box-flex: 0;
+      flex: 0 1 auto;
+      -webkit-flex: 0 1 auto;
+      -moz-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      -o-flex: 0 1 auto;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      width: 100%;
+      height: 100%;
+  
+      padding: 0;
+      margin: 0;
+  }
+  
+  .project-screenshots-example {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 5%;
+      margin: 0;
+      max-width: 100%;
+      
+  }

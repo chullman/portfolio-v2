@@ -1,0 +1,100 @@
+.generic-flex-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.generic-flex-container > h1 {
+  font-size: 2em;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.generic-flex-container > p {
+  font-size: 1.2em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.generic-flex-container li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.generic-flex-container > ul {
+  padding-left: 40px;
+  padding-right: 2%;
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+  background-color: white;
+}
+#projects-container > h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#project-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+#project-cards-container .project-card-content-container {
+  background-color: #1A2530;
+  position: relative;
+  width: 100%;
+  height: 525px;
+  max-width: 300px;
+  margin-bottom: 30px;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 3%;
+  transition: all 0.3s ease-in;
+}
+#project-cards-container .project-card-content-container h2, #project-cards-container .project-card-content-container h4 {
+  color: white;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+#project-cards-container .project-card-content-container h2 {
+  font-size: 2.6rem;
+  line-height: 1.25;
+}
+#project-cards-container .project-card-content-container h4 {
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+#project-cards-container .project-card-content-container:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.projects-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #fc9e49;
+}
+.projects-thumb > img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #project-cards-container .project-card-content-container {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+/*# sourceMappingURL=projectpage_custom.css.map */

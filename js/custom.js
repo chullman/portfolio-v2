@@ -33,6 +33,7 @@ function showOrHideNavDropdown(e) {
   }
 }
 
+
 // Adds an increasingly longer animation delay for every wave line, left to right, in the jumbotron section on Home Page, to simulate a "wave" effect
 // With reference from https://codepen.io/shane-clarke/pen/poNeeGg for help with this
 

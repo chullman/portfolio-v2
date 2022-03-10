@@ -33,18 +33,18 @@ SUBPAGES TITLE HEADER
     flex: 0 1 auto;
     align-items: center;
     justify-content: flex-start;
+
+    &>h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+        font-size: 2rem;
+        width: 80%;
+    }
 }
 
-#jumbo-header-front > h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-weight: 300;
-    margin: 0;
-    text-align: center;
-    font-size: 2.5rem;
-    width: 80%;
-
-}
 
 #jumbo-header-front #anchor {
     content: url("../assets/anchor_icon.png");
@@ -54,7 +54,7 @@ SUBPAGES TITLE HEADER
     
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     #jumbo-header-front #anchor {
         visibility: visible;
     }
@@ -66,5 +66,13 @@ SUBPAGES TITLE HEADER
     #jumbo-header-front {
         height: 160px;
         margin-top: -160px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    #jumbo-header-front {
+        &>h1 {
+            font-size: 2.5rem;
+        }
     }
 }
