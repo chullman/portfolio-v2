@@ -368,9 +368,6 @@ CARDS - COMMON STYLING
     padding-left: 5%;
     padding-right: 5%;
 
-    .fa-arrow-right, .fa-arrow-down {
-        max-width: 34.41px;
-    }
 
     // In the "contact me" title, hide the right arrow and show the down arrow when the footer contents are in a column
     .fa-arrow-right {
@@ -379,6 +376,12 @@ CARDS - COMMON STYLING
 
     .fa-arrow-down {
         display: inline-block;
+    }
+
+    // I had to enforce a very specific max-width here for the two arrow types so that it changes correctly (see above) depending
+    // on whether the footer contents are in a row or column
+    .fa-arrow-right, .fa-arrow-down {
+        max-width: 34.41px;
     }
 
     &>h1 {
@@ -454,8 +457,10 @@ CARDS - COMMON STYLING
 
 }
 
-// In the "contact me" title, show the right arrow and hide the down arrow when the footer contents are in a row
-@media only screen and (min-width: 788px) {
+// In the "contact me" title, show the right arrow and hide the down arrow when the footer contents are in a row for larger viewports
+// Like as per commented about the arrows above, I had to enforce a very specific min-width here for the two arrow types so that
+// it changes correctly (see above) depending on whether the footer contents are in a row or column
+@media only screen and (min-width: 804.1px) {
 #footer-container-title {
 
         .fa-arrow-right {

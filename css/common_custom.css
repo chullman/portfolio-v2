@@ -302,14 +302,14 @@ CONTACT ME FOOTER
   padding-left: 5%;
   padding-right: 5%;
 }
-#footer-container-title .fa-arrow-right, #footer-container-title .fa-arrow-down {
-  max-width: 34.41px;
-}
 #footer-container-title .fa-arrow-right {
   display: none;
 }
 #footer-container-title .fa-arrow-down {
   display: inline-block;
+}
+#footer-container-title .fa-arrow-right, #footer-container-title .fa-arrow-down {
+  max-width: 34.41px;
 }
 #footer-container-title > h1 {
   color: white;
@@ -374,7 +374,7 @@ CONTACT ME FOOTER
   text-align: left;
 }
 
-@media only screen and (min-width: 788px) {
+@media only screen and (min-width: 804.1px) {
   #footer-container-title .fa-arrow-right {
     display: inline-block;
   }
