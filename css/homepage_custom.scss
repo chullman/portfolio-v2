@@ -232,18 +232,24 @@ CARDS LINK SECTION
 
     // Hover probably shouldn't be applied to mobile views/touchscreens (maybe fix?)
     &:hover {
-        transform: scale(1.1, 1.1);
+        transform: scale(1.08, 1.08);
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     }
 }
 
 #cards-container .thumb {
-    height: 50%;
-    width: 100%;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &>img {
+        height: 100%;
+        width: 80%;
+        
+    }
     border-bottom: 5px solid $aesthetic-border-color;
+
 }
 
 #cards-container #blog-logo {
