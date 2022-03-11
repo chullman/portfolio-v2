@@ -79,50 +79,18 @@
 }
 
 .project-screenshots {
-  display: -webkit-box;
   display: flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -o-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-flex: 0;
-  flex: 0 1 auto;
-  -webkit-flex: 0 1 auto;
-  -moz-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  -o-flex: 0 1 auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
 }
-
-.project-screenshots-example {
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 5%;
-  margin: 0;
+.project-screenshots > img {
+  padding: 15px 15px 15px 15px;
   max-width: 100%;
+  max-height: 100%;
 }
 
 /*# sourceMappingURL=projectpage_popup_custom.css.map */
