@@ -128,6 +128,11 @@
                         <h2>Career Portfolio</h2>
                     </div>
                     <div id="wave-container">
+                        <!-- Below, this is the max number of "wave-line" div elements needed for correct display on a full desktop browser at a viewport for width greater than 1280px
+                        (as per specified in the CSS media breakpoint for the main content container - i.e. #main-container in common_custom.scss)
+
+                        TO DO: Ideally, for mobile and tablet views, there should be CSS media breakpoints to hide some unnecessary wave-line elements for performance
+                        reasons as they will be hidden from view anyway -->
                         <div class="wave-line"></div>
                         <div class="wave-line"></div>
                         <div class="wave-line"></div>
@@ -185,7 +190,7 @@
                     <!-- For SVG files I "believe" a seperate DOCTYPE and XML declaration is required in the svg as per referenced here: https://oreillymedia.github.io/Using_SVG/extras/ch01-XML.html
                     and here: https://stackoverflow.com/questions/38169475/svg-in-html5-when-is-xml-declaration-xml-version-1-0-encoding-utf-8/38172170 -->
                     <object data="/assets/brand_logo_nowave_plainsvg.svg" type="image/svg+xml" id="ship-brand-logo-withoutwave">
-                        <!-- Because "objects" are not recognised in image searches for SEO, there is a fallback "img" tag below -->
+                        <!-- Because "object" elements are not recognised in image searches for SEO, there is a fallback "img" tag nested below -->
                         <!-- Reference: https://vecta.io/blog/best-way-to-embed-svg -->
                         <img src="/assets/brand_logo_nowave_plainsvg.svg" alt="Ship Brand Logo">
                     </object>
