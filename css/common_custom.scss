@@ -345,80 +345,41 @@ CARDS - COMMON STYLING
     height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 0 1 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     margin: 0;
 
     border-top: 5px solid $aesthetic-border-color;
-    background-color: #034078;
-
-    ul {
-        display: block;
-        position: relative;
-        width: 100%;
-        list-style-position: inside;
-    }
-
-    li {
-        position: relative;
-        display: block;
-        list-style-type: none;
-        width: 100%;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    span {
-        color: white;
-        height: 200px;
-        font-size: 2em;
-        text-align: left;
-    }
-
-    .contact-text {
-        font-size: 12px;
-        font-weight: bold;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        margin: auto 0 0 0;
-        transform: translateY(10px);
-    }
+    background-color: $footer-background-color;
 
 }
 
-#footer-container-right {
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 auto;
-    align-items:flex-start;
-    justify-content: space-between;
-    width: 500px;
-    height: 100%;
-    padding-top: 10px;
-
-    .fa-brands, .fa-solid {
-        margin-right: 10px;
-    }
-
-    li {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-#footer-container-left {
+#footer-container-title {
     display: flex;
     flex-direction: column;
-    flex: 0 1 auto;
+    flex-wrap: wrap;
     align-items: center;
-    width: 400px;
+    justify-content: center;
+    //width: 400px;
+    max-width: 100%;
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .fa-arrow-right, .fa-arrow-down {
+        max-width: 34.41px;
+    }
+
+    // In the "contact me" title, hide the right arrow and show the down arrow when the footer contents are in a column
+    .fa-arrow-right {
+        display: none;
+    }
+
+    .fa-arrow-down {
+        display: inline-block;
+    }
 
     &>h1 {
         color: white;
@@ -439,6 +400,76 @@ CARDS - COMMON STYLING
         line-height: 1.2;
     }
 }
+
+#footer-container-links {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+    //width: 500px;
+    max-width:100%;
+    height: 100%;
+    padding-top: 10px;
+
+    .contact-text {
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        margin: auto 0 0 0;
+        transform: translateY(10px);
+    }
+
+    .fa-brands, .fa-solid {
+        margin-right: 10px;
+    }
+
+    ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        list-style-position: inside;
+    }
+
+    li {
+        position: relative;
+        display: block;
+        list-style-type: none;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    span {
+        color: white;
+        height: 200px;
+        font-size: 2em;
+        text-align: left;
+    }
+
+}
+
+// In the "contact me" title, show the right arrow and hide the down arrow when the footer contents are in a row
+@media only screen and (min-width: 788px) {
+#footer-container-title {
+
+        .fa-arrow-right {
+            display: inline-block;
+        }
+
+        .fa-arrow-down {
+            display: none;
+        }
+
+    }   
+}
+
+
 
 /*
 GENERIC FLEX CONTAINER - MOST SUBPAGES WILL LIKELY USE THIS CLASS
