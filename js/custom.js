@@ -2,7 +2,6 @@ window.onload = init;
 
 // On window load, that is, when the DOM is created, because we're calling the .JS file each HTML files' head element...
 function init() {
-
   // Assign the showOrHideNavDropdown function event handler to the onclick listener
   // This function will be used on mobile devices for the "hamburger" nav icon and links dropdown
   // to check if the user clicks anywhere outside of the "hamburger" icon OR outside of the dropdown box
@@ -22,14 +21,12 @@ function showOrHideNavDropdown(e) {
   // Check if the user clicks anywhere on the page except for the hamburger button
   // e = click event
   if (e.target != hamburgerButton) {
-    
     // If this is the case, check if the user clicked on an anchor link in the dropdown box
-    // We'll use a boolean to raise a flag if true 
+    // We'll use a boolean to raise a flag if true
     var didUserClickOnALink = false;
 
     // Get all anchor tag links to other HTML pages in the dropdown
     var allDropdownLinks = document.getElementById("dropdown-content-container").getElementsByTagName("a");
-
 
     for (var i = 0; i <= allDropdownLinks.length; i++) {
       // For every link in the dropdown, check if the user clicked on any one of them, and if so, raise our boolean flag to true
@@ -45,17 +42,15 @@ function showOrHideNavDropdown(e) {
       hamburgerDropdown.style.display = "";
     }
 
-
-  // Else if the user clicks on the hamburger button, show or hide the link dropdown box depending on whether it's currently displaying or not
+    // Else if the user clicks on the hamburger button, show or hide the link dropdown box depending on whether it's currently displaying or not
   } else if (e.target == hamburgerButton) {
-        if (hamburgerDropdown.style.display == "") {
-            hamburgerDropdown.style.display = "block";
-        } else {
-            hamburgerDropdown.style.display = "";
-        }
+    if (hamburgerDropdown.style.display == "") {
+      hamburgerDropdown.style.display = "block";
+    } else {
+      hamburgerDropdown.style.display = "";
+    }
   }
 }
-
 
 // Adds an increasingly longer animation delay for every wave line, left to right, in the jumbotron section on Home Page, to simulate a "wave" effect
 // With reference from https://codepen.io/shane-clarke/pen/poNeeGg for help with this
