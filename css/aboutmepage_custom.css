@@ -1,3 +1,8 @@
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 #tag-and-portrait-container {
   display: flex;
   flex-direction: column;
@@ -154,15 +159,12 @@
   margin-bottom: 10px;
 }
 
-.generic-flex-container > h1 {
-  font-size: 2em;
-}
-.generic-flex-container > h1:first-child {
+.generic-flex-container > h2:first-child {
   align-self: center;
   justify-self: center;
   text-align: center;
 }
-.generic-flex-container > h1:nth-child(2), .generic-flex-container > h1:nth-child(4) {
+.generic-flex-container > h2:nth-child(2), .generic-flex-container > h2:nth-child(4) {
   padding-left: 5%;
 }
 .generic-flex-container > h3 {
@@ -190,8 +192,7 @@
   padding-left: 2%;
   padding-right: 2%;
 }
-#interests-hobbies-text-container > h1 {
-  font-size: 2em;
+#interests-hobbies-text-container > h2 {
   text-align: center;
 }
 #interests-hobbies-text-container li {
