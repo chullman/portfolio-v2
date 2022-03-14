@@ -227,6 +227,7 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
         top: 35%;
         list-style-type: none;
         z-index: 4;
+        background-color: $dialogbox-background-color;
 
         .contact-fixed-sidebar-dialogbox {
             display: none;
@@ -255,13 +256,11 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
             background-color: $dialogbox-background-color;
             border-radius: 20px;
             
-
-            &>p {
-                font-family: $body-google-font-family;
-                font-weight: 100;
-                margin: 0;
-                padding: 10px;
-            }
+            font-family: $body-google-font-family;
+            font-weight: 100;
+            margin: 0;
+            padding: 10px;
+            
 
         }
     }

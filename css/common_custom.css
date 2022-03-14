@@ -179,6 +179,7 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
     top: 35%;
     list-style-type: none;
     z-index: 4;
+    background-color: #1A2530;
   }
   #contact-fixed-sidebar .contact-fixed-sidebar-dialogbox {
     display: none;
@@ -201,8 +202,6 @@ FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
     z-index: 2;
     background-color: #1A2530;
     border-radius: 20px;
-  }
-  #contact-fixed-sidebar li:hover .contact-fixed-sidebar-dialogbox > p {
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     margin: 0;
