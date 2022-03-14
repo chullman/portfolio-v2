@@ -1,9 +1,16 @@
 window.onload = init;
 
+// On window load, that is, when the DOM is created, because we're calling the .JS file each HTML files' head element...
 function init() {
 
+  // Assign the showOrHideNavDropdown function event handler to the onclick listener
+  // This function will be used on mobile devices for the "hamburger" nav icon and links dropdown
+  // to check if the user clicks anywhere outside of the "hamburger" icon OR outside of the dropdown box
+  // to close the dropdown box if it's open
   document.getElementById("main-container").onclick = showOrHideNavDropdown;
 
+  // For the Home Page's jumbotron "blue wave" animation
+  // (see function below for more details)
   waveLineDelay();
 }
 
@@ -11,18 +18,35 @@ function init() {
 function showOrHideNavDropdown(e) {
   var hamburgerButton = document.getElementById("nav-hamburger-custom");
   var hamburgerDropdown = document.getElementById("hamburger-dropdown");
-  // Check if the user clicks anywhere on the page except for the hamburger button, or one of the P links in the link dropdown box,
-  // and if so, hide the dropdown box
+
+  // Check if the user clicks anywhere on the page except for the hamburger button
+  // e = click event
   if (e.target != hamburgerButton) {
-    // This should be a "for" or "forEach" loop for each anchor tag (i.e. link in the dropdown), but I don't know how yet - Chris Hullman
-    if (e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[0] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[1] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[2] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[3] &&
-        e.target != document.getElementById("dropdown-content-container").getElementsByTagName("a")[4]) {
-            hamburgerDropdown.style.display = "";
-        }
-    // Else if the user clicks on the hamburger button, show or hide the link dropdown box depending on whether it's currently displaying or not
+    
+    // If this is the case, check if the user clicked on an anchor link in the dropdown box
+    // We'll use a boolean to raise a flag if true 
+    var didUserClickOnALink = false;
+
+    // Get all anchor tag links to other HTML pages in the dropdown
+    var allDropdownLinks = document.getElementById("dropdown-content-container").getElementsByTagName("a");
+
+
+    for (var i = 0; i <= allDropdownLinks.length; i++) {
+      // For every link in the dropdown, check if the user clicked on any one of them, and if so, raise our boolean flag to true
+      if (e.target == allDropdownLinks[i]) {
+        didUserClickOnALink = true;
+      }
+    }
+
+    // Other if our boolean flag is still false, this means the user clicked outside of the nav dropdown box, so close it
+    if (didUserClickOnALink == false) {
+      // I DON'T KNOW WHY, but display has to be set to "" and not "none", to hide the dropdown box
+      // I still don't know why this is this is case as of writing this comment (14/03/2022)
+      hamburgerDropdown.style.display = "";
+    }
+
+
+  // Else if the user clicks on the hamburger button, show or hide the link dropdown box depending on whether it's currently displaying or not
   } else if (e.target == hamburgerButton) {
         if (hamburgerDropdown.style.display == "") {
             hamburgerDropdown.style.display = "block";
@@ -41,7 +65,7 @@ function waveLineDelay() {
   var allWaveLines = document.getElementsByClassName("wave-line");
   var waveLine = null;
 
-  // For every wave line that exists, from left to right, add a higher delay value to the value of the previous line
+  // For every vertical wave line that exists, from left to right, add a higher delay value to the value of its previous line
   for (var i = 0; i < allWaveLines.length; i++) {
     waveLine = allWaveLines[i];
     waveLine.style.animationDelay = delay + "s";
