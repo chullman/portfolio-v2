@@ -25,6 +25,21 @@
     //pointer-events: none;
   
     overflow-y: scroll;
+
+    &>div {
+      padding: 0;
+    }
+
+    .close-project-popup {
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      height: 100px;
+      display: inline-block;
+      padding-right: 20px;
+
+    }
+
   }
   
 //   The CSS :target pseudo-selector in CSS matches when the hash in the URL and the id of an element are the same
@@ -59,27 +74,6 @@
       margin-bottom: 0;
     }
 }
-  
-  .project-popup {
-
-    &>div {
-      //position: relative;
-    }
-
-    .close-project-popup {
-      font-size: 30px;
-      font-weight: bold;
-      text-decoration: none;
-      height: 100px;
-      display: inline-block;
-      padding-right: 20px;
-
-    }
-    
-
-  }
-
-
 
   
   @media only screen and (min-width: 768px) {
@@ -103,34 +97,32 @@
   
 
   
-  .project-popup>div {
-      padding: 0;
-  }
   
   .popup-content {
       padding: 5% 5% 5% 5%;
-  }
-  
-  
-  .popup-content > p {
-      font-size: 1.2em;
-      
-  }
-  
-  .popup-content > h4 {
+
+      &>p {
+        font-size: 1.2em;
+    }
+
+    &h4 {
       color: black;
-  }
-  
-  .popup-content li {
+    }
+
+    li {
       font-size: 1.2em;
-  }
-  
-  .popup-content .popup-content-border {
+    }
+
+    .popup-content-border {
       border-bottom: 5px solid $aesthetic-border-color;
       padding-top: 1%;
       padding-bottom: 1%;
       width: 100%;
+    }
+    
   }
+  
+
   
   .project-screenshots {
       display: flex;

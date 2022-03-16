@@ -13,6 +13,17 @@
   display: none;
   overflow-y: scroll;
 }
+.project-popup > div {
+  padding: 0;
+}
+.project-popup .close-project-popup {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 100px;
+  display: inline-block;
+  padding-right: 20px;
+}
 
 :target {
   display: block;
@@ -37,15 +48,6 @@
   margin-bottom: 0;
 }
 
-.project-popup .close-project-popup {
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  height: 100px;
-  display: inline-block;
-  padding-right: 20px;
-}
-
 @media only screen and (min-width: 768px) {
   .project-popup {
     margin-left: auto;
@@ -61,26 +63,18 @@
   background-color: #1A2530;
 }
 
-.project-popup > div {
-  padding: 0;
-}
-
 .popup-content {
   padding: 5% 5% 5% 5%;
 }
-
 .popup-content > p {
   font-size: 1.2em;
 }
-
-.popup-content > h4 {
+.popup-contenth4 {
   color: black;
 }
-
 .popup-content li {
   font-size: 1.2em;
 }
-
 .popup-content .popup-content-border {
   border-bottom: 5px solid #fc9e49;
   padding-top: 1%;
