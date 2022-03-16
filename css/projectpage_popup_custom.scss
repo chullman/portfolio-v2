@@ -3,142 +3,142 @@
 
 .project-popup {
 
-    position: fixed;
-    background-color: white;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 4;
+
+  //opacity: 0;
+
+  display: none;
+
+  // Because this fixed popup window covers the entire screen on HTML load, we don't want anything on the popup to be interactable or clickable until the user
+  // wants to navigate to the project popup
+  //pointer-events: none;
+
+  overflow-y: scroll;
+
+  &>div {
     padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+  }
 
-    z-index: 4;
-  
-    //opacity: 0;
-
-    display: none;
-
-    // Because this fixed popup window covers the entire screen on HTML load, we don't want anything on the popup to be interactable or clickable until the user
-    // wants to navigate to the project popup
-    //pointer-events: none;
-  
-    overflow-y: scroll;
-
-    &>div {
-      padding: 0;
-    }
-
-    .close-project-popup {
-      font-size: 30px;
-      font-weight: bold;
-      text-decoration: none;
-      height: 100px;
-      display: inline-block;
-      padding-right: 20px;
-
-    }
+  .close-project-popup {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 100px;
+    display: inline-block;
+    padding-right: 20px;
 
   }
-  
+
+}
+
 //   The CSS :target pseudo-selector in CSS matches when the hash in the URL and the id of an element are the same
 //   Reference: https://css-tricks.com/css-target/
 //   e.g. when the URL is webdev.html#open-project-popup-1, the below :target pseudo-selector will find the element with the id open-project-popup-1
 
 :target {
 
-    //opacity: 1;
-    // Show the popup in its entirety
-    display: block;
+  //opacity: 1;
+  // Show the popup in its entirety
+  display: block;
 
-    //pointer-events: auto;
-  }
-
-  .popup-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-    background-color: $project-header-background-color;
-
-    h2 {
-      font-family: $primary-google-font-family;
-      display: inline-block;
-      color: $aesthetic-text-color;
-      line-height: 100px;
-      padding-right: 20px;
-      vertical-align: middle;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+  //pointer-events: auto;
 }
 
-  
-  @media only screen and (min-width: 768px) {
-    .project-popup {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 1280px;
-    }
-  }
-  
-  .fa-window-close {
+.popup-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background-color: $project-header-background-color;
+
+  h2 {
+    font-family: $primary-google-font-family;
     display: inline-block;
+    color: $aesthetic-text-color;
     line-height: 100px;
-      font-size: 2em;
-      color: $aesthetic-border-color;
-      background-color: $project-header-background-color;
-
-      //padding-right: 20px;
-      //padding-top: 25%;
+    padding-right: 20px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  
+}
 
-  
-  
-  .popup-content {
-      padding: 5% 5% 5% 5%;
 
-      &>p {
-        font-size: 1.2em;
-    }
-
-    &h4 {
-      color: black;
-    }
-
-    li {
-      font-size: 1.2em;
-    }
-
-    .popup-content-border {
-      border-bottom: 5px solid $aesthetic-border-color;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      width: 100%;
-    }
-    
+@media only screen and (min-width: 768px) {
+  .project-popup {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
   }
-  
+}
 
-  
-  .project-screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      //width: 100%;
-      //height: 100%;
+.fa-window-close {
+  display: inline-block;
+  line-height: 100px;
+  font-size: 2em;
+  color: $aesthetic-border-color;
+  background-color: $project-header-background-color;
 
-      padding: 0;
-      margin: 0;
+  //padding-right: 20px;
+  //padding-top: 25%;
+}
 
-      &>img {
-        padding: 15px 15px 15px 15px;
-        max-width: 100%;
-        max-height: 100%;
-      }
+
+
+
+.popup-content {
+  padding: 5% 5% 5% 5%;
+
+  &>p {
+    font-size: 1.2em;
   }
+
+  &h4 {
+    color: black;
+  }
+
+  li {
+    font-size: 1.2em;
+  }
+
+  .popup-content-border {
+    border-bottom: 5px solid $aesthetic-border-color;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+  }
+
+}
+
+
+
+.project-screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  //width: 100%;
+  //height: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  &>img {
+    padding: 15px 15px 15px 15px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
