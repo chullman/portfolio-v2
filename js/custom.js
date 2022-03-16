@@ -22,7 +22,6 @@ function showOrHideNavDropdown(e) {
   // Check if the user clicks anywhere on the page except for the hamburger button or the above "links:" text
   // e = click event
   if ((e.target != hamburgerButton) && (e.target != hamburgerLinksText)) {
-    console.log("ENTERED");
     // If this is the case, check if the user clicked on an anchor link in the dropdown box
     // We'll use a boolean to raise a flag if true
     var didUserClickOnALink = false;
