@@ -18,16 +18,32 @@
   display: block;
 }
 
-.project-popup > div {
-  position: relative;
+.popup-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background-color: #1A2530;
+}
+.popup-header h2 {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  color: #fc9e49;
+  line-height: 100px;
+  padding-right: 20px;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .project-popup .close-project-popup {
-  position: relative;
-  float: right;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
+  height: 100px;
+  display: inline-block;
+  padding-right: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -38,17 +54,11 @@
   }
 }
 .fa-window-close {
+  display: inline-block;
+  line-height: 100px;
   font-size: 2em;
-  color: #FC9E49;
-  background-color: #293345;
-  padding-right: 20px;
-  padding-top: 25%;
-}
-
-.popup-header {
-  width: 100%;
-  height: 100px;
-  background-color: #293345;
+  color: #fc9e49;
+  background-color: #1A2530;
 }
 
 .project-popup > div {
@@ -72,7 +82,7 @@
 }
 
 .popup-content .popup-content-border {
-  border-bottom: 5px solid #FC9E49;
+  border-bottom: 5px solid #fc9e49;
   padding-top: 1%;
   padding-bottom: 1%;
   width: 100%;
