@@ -16,11 +16,13 @@ function init() {
 // Source referred to for help with the following onclick event handler function: https://stackoverflow.com/a/36695562
 function showOrHideNavDropdown(e) {
   var hamburgerButton = document.getElementById("nav-hamburger-custom");
+  var hamburgerLinksText = document.getElementById("nav-hamburger-links-text");
   var hamburgerDropdown = document.getElementById("hamburger-dropdown");
 
-  // Check if the user clicks anywhere on the page except for the hamburger button
+  // Check if the user clicks anywhere on the page except for the hamburger button or the above "links:" text
   // e = click event
-  if (e.target != hamburgerButton) {
+  if ((e.target != hamburgerButton) && (e.target != hamburgerLinksText)) {
+    console.log("ENTERED");
     // If this is the case, check if the user clicked on an anchor link in the dropdown box
     // We'll use a boolean to raise a flag if true
     var didUserClickOnALink = false;
@@ -42,8 +44,8 @@ function showOrHideNavDropdown(e) {
       hamburgerDropdown.style.display = "";
     }
 
-    // Else if the user clicks on the hamburger button, show or hide the link dropdown box depending on whether it's currently displaying or not
-  } else if (e.target == hamburgerButton) {
+    // Else if the user clicks on the hamburger button or the above "links:" text, show or hide the link dropdown box depending on whether it's currently displaying or not
+  } else if (e.target == hamburgerButton || e.target == hamburgerLinksText) {
     if (hamburgerDropdown.style.display == "") {
       hamburgerDropdown.style.display = "block";
     } else {
