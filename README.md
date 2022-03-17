@@ -35,7 +35,7 @@ Even though it is not required for the "Coder Academy" assessment, I used option
 - Increasing accessibility - On mobile devices, the top navigation bar links collapse into a “hamburger” icon. JavaScript is used here to detect when the user touches the hamburger icon (as it’s not an anchor element), and displays a dropdown box containing the hyperlinks to the other internal HTML pages. Additionally, JavaScript is used here to increase accessibility by detecting if the user touches on the screen *outside* of the dropdown box, forcing the dropdown box to disappear.
 - Increasing fun and engagement to the user - On the Home Page, the “hero” component (aka, the “jumbotron”) features a blue “wave” animation. Regular CSS was used mostly to animate the elements of the wave, and JavaScript simply adds different delays in animation timing of each of these elements to simulate the wave effect. 
 
-See the code comments in my JavaScript file for more information, including code references: [**https://github.com/chullman/portfolio-v2/blob/master/js/custom.js**](https://github.com/chullman/portfolio-v2/blob/master/js/custom.js)
+See the code comments in my JavaScript file for more information, including code references: [**https://github.com/chullman/portfolio-v2/blob/master/js/custom.js**](https://github.com/chullman/portfolio-v2/blob/master/js/custom.js) (open in your favourite text editor or IDE).
 
 ### Sitemap:
 
