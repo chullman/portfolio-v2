@@ -39,11 +39,24 @@ See the code comments in my JavaScript file for more information, including code
 
 ### Sitemap:
 
+![Sitemap screenshot](docs/Chris_Hullman_Portfolio_Sitemap.png)
+
 ### Screenshots:
 
 Only mobile phone views of each HTML page and any popups are displayed below.
 
-See [**https://github.com/chullman/portfolio-v2/tree/master/docs**](https://github.com/chullman/portfolio-v2/tree/master/docs) for the screenshots of all other device viewports.
+(See [**https://github.com/chullman/portfolio-v2/tree/master/docs**](https://github.com/chullman/portfolio-v2/tree/master/docs) for the screenshots of all other device viewports.)
+
+#### Home Page
+![Home page mobile view screenshot](docs/screenshot_homepage_mobile.png)
+#### Projects Page
+![Projects page mobile view screenshot](docs/screenshot_projectspage_mobile.png)
+#### Project Popup Window
+![Project popup window mobile view screenshot](docs/screenshot_projectpopup_mobile.png)
+#### Blog Page
+![Blog page mobile view screenshot](docs/screenshot_blogpage_mobile.png)
+#### About Me Page
+![About Me page mobile view screenshot](docs/screenshot_aboutmepage_mobile.png)
 
 ### Target Audience:
 
