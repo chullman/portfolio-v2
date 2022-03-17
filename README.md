@@ -37,7 +37,27 @@ Even though it is not required for the "Coder Academy" assessment, I used option
 
 See the code comments in my JavaScript file for more information, including code references: [**https://github.com/chullman/portfolio-v2/blob/master/js/custom.js**](https://github.com/chullman/portfolio-v2/blob/master/js/custom.js)
 
-### Sitemap
+### Sitemap:
 
-### Screenshots
+### Screenshots:
 
+Only mobile phone views of each HTML page and any popups are displayed below.
+
+See (**https://github.com/chullman/portfolio-v2/tree/master/docs**)[https://github.com/chullman/portfolio-v2/tree/master/docs] for the screenshots of all other device viewports.
+
+### Target Audience:
+
+There are three primary target audiences of my portfolio:
+- Recruiters and employers of established businesses, or established or up-and-coming start-up organisations, proactively seeking web developers or other such IT professionals.
+- Recruiters and employers of established businesses, or established or up-and-coming start-up organisations that I myself have applied to directly in relation to a job vacancy.
+- If I choose a career as a freelance web developer, the target audience will directly be my customers seeking a web developer to develop a project for them.
+
+
+### Tech Stack:
+
+- HTML5
+- CSS3
+- Front-end JavaScript
+- Deployment platform: Netlify
+- CI/CD: Netlify linked with source GitHub repository
+- Source code storage platform: GitHub repository
