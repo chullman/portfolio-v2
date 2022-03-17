@@ -1,10 +1,13 @@
+// ***
+// This holds all the SASS styling that will only be used on the blog.html page
+// ***
+
 @import "variables";
 
 
 .a-blog-post {
     display: flex;
     flex-direction: column;
-    //flex: 0 1 auto;
     width: 100%;
     height: 100%;
     margin-top: 15px;
@@ -79,6 +82,7 @@
     // For some reason, I don't know why, I can get the line to display horizontally fine,
     // but when converted to a vertical line for desktop view, nothing shows. 
     // So I just set the display to "none" and used a solid border on the blog post paragraph instead
+    // UPDATE (17/03/2022): I think I know how to fix this using absolute positioning, but I'll leave it like this for now
     .blog-post-divider-line {
         display: none;
     }

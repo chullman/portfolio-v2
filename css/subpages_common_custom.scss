@@ -1,3 +1,7 @@
+// ***
+// This holds all the SASS styling that will only be used across all sub-pages (i.e. all HTML pages except for index.html - the Home page)
+// ***
+
 @import "variables";
 
 /*
@@ -25,9 +29,11 @@ SUBPAGES TITLE HEADER
     background-color: $navbar-background-color;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+
+    // Force a negative margin so that it overlaps the behind jumbo header without the need for absolute positioning. z-index ensures it stays above.
     margin-top: -120px;
-    //margin-bottom: 50px;
     z-index: 2;
+
     display: flex;
     flex-direction: column;
     flex: 0 1 auto;

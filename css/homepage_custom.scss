@@ -1,3 +1,7 @@
+// ***
+// This holds all the SASS styling that will only be used on the index.html page (aka, the Home page)
+// ***
+
 @import "variables";
 
 /*
@@ -26,7 +30,7 @@ JUMBOTRON SECTION
     background-position:top;
     background-size:cover;
 
-    // Prevents the child wave lines, as inline-blocks, from wrapping. Should overflow on the X-axis and be hidden beyond the viewport.
+    // Prevents the child wave lines, as inline-blocks, from wrapping to multiple rows. Instead, should overflow on the X-axis and be hidden beyond the viewport thanks to "overflow: hidden" above.
     white-space: nowrap;
 
     width: 100%;

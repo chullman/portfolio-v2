@@ -1,3 +1,7 @@
+// ***
+// This holds all the SASS styling that will only be used on the aboutme.html page
+// ***
+
 @import "variables";
 
 h2 {
@@ -54,7 +58,6 @@ h2 {
 @media only screen and (min-width: 768px) {
     #tag-and-portrait-container {
         flex-direction: row;
-        //flex-wrap: wrap;
         width: 735px;
         height: 450px;
     }
@@ -115,6 +118,7 @@ h2 {
     margin-bottom: 0;
 }
 
+// In the Timeline component, use the ::before pseudo-selector to apply a vertical coloured line to the left of each of the list elements
 #timeline-container > ul > li::before {
     content: '';
     position: absolute;
@@ -126,6 +130,7 @@ h2 {
     margin-left: -3px;
 }
 
+// In the Timeline component, use the ::after pseudo-selector to apply an orange circle to the left of each of the list elements and overlay the vertical coloured line above
 #timeline-container > ul > li::after {
     content: '';
     position: absolute;
