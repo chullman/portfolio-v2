@@ -43,7 +43,7 @@ See the code comments in my JavaScript file for more information, including code
 
 Only mobile phone views of each HTML page and any popups are displayed below.
 
-See (**https://github.com/chullman/portfolio-v2/tree/master/docs**)[https://github.com/chullman/portfolio-v2/tree/master/docs] for the screenshots of all other device viewports.
+See [**https://github.com/chullman/portfolio-v2/tree/master/docs**](https://github.com/chullman/portfolio-v2/tree/master/docs) for the screenshots of all other device viewports.
 
 ### Target Audience:
 
