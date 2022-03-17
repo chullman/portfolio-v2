@@ -1,318 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Chris Hullman - Web Dev</title>
-
-    <!-- Favicon of ship logo -->
-    <link rel="icon" type="image/png" href="/assets/favicon.ico">
-
-    <!--For display previews when linking site to social media (e.g. Facebook)-->
-    <meta property="og:image" content="../assets/facebook_thumb.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://chullman.netlify.app/subpages/webdev.html" />
-    <meta property="og:title" content="Portfolio of Chris Hullman - Web Dev" />
-    <meta property="og:description" content="A Student Web developer and an Aspiring IT Professional" />
-
-    <!-- normalize.css is a third-party CSS reset/normalisation file - intended to override browser defaults -->
-    <!-- To meet with assessment requirements, this is not a framework -->
-    <!-- Source: https://necolas.github.io/normalize.css/ -->
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-
-    <!-- Google Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,900" rel="stylesheet">
-
-    <!-- Fetches icons and styling from fontawesome.com - free to use -->
-    <script src="https://kit.fontawesome.com/ed26538f03.js" crossorigin="anonymous"></script>
-
-    <!-- All my own stylesheets -->
-    <link rel="stylesheet" href="/css/common_custom.css">
-    <link rel="stylesheet" href="/css/subpages_common_custom.css">
-    <link rel="stylesheet" href="/css/projectpage_custom.css">
-    <link rel="stylesheet" href="/css/projectpage_popup_custom.css">
-
-    <!-- My custom self-written JavaScript that currently does two functions:
-    - Listens for and reacts to mouse click events on the top nav "hamburger" and its nav list dropdown on small/mobile screens
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio of Chris Hullman - Web Dev</title>
+        <!-- Favicon of ship logo -->
+        <link rel="icon" type="image/png" href="/assets/favicon.ico">
+        <!--For display previews when linking site to social media (e.g. Facebook)-->
+        <meta property="og:image" content="../assets/facebook_thumb.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://chullman.netlify.app/subpages/webdev.html" />
+        <meta property="og:title" content="Portfolio of Chris Hullman - Web Dev" />
+        <meta property="og:description" content="A Student Web developer and an Aspiring IT Professional" />
+        <!-- normalize.css is a third-party CSS reset/normalisation file - intended to override browser defaults -->
+        <!-- To meet with assessment requirements, this is not a framework -->
+        <!-- Source: https://necolas.github.io/normalize.css/ -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <!-- Google Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,900" rel="stylesheet">
+        <!-- Fetches icons and styling from fontawesome.com - free to use -->
+        <script src="https://kit.fontawesome.com/ed26538f03.js" crossorigin="anonymous"></script>
+        <!-- All my own stylesheets -->
+        <!-- Only those CSS files needed for this HTML page are linked here -->
+        <link rel="stylesheet" href="/css/common_custom.css">
+        <link rel="stylesheet" href="/css/subpages_common_custom.css">
+        <link rel="stylesheet" href="/css/projectpage_custom.css">
+        <link rel="stylesheet" href="/css/projectpage_popup_custom.css">
+        <!-- My custom self-written JavaScript that currently does two functions:
+    - Listens for and reacts to mouse click events on the top nav "hamburger" and "links:" text, as well as its nav list dropdown on small/mobile screens
     - Handles and maniupulates the "animation-delay" style attribute for each of the "wave-line" classes on the Home Page
     - TO DO: "animation-delay" handling function not needed on this HTML page, just the Home Page only
     (see comments in the .js file for more info) -->
-    <script src="/js/custom.js"></script>
+        <script src="/js/custom.js"></script>
+    </head>
 
-</head>
-<body>
+    <body>
 
-    <article id="open-project-popup-1" class="project-popup">
-        <div>
-            <div class="popup-header">
-                <a href="#"><h2>Close:</h2></a>
-                <a href="#" title="Close" class="close-project-popup"><i class="fa fa-window-close"></i></a>
-            </div>
-            <div class="popup-content">
-                <h2>Application:</h2>
-                <h2>"Bubble Buddies"</h2>
-                <p>Likened to the popular group event hosting and organisation platform, "meetup.com", this app was developed from the ground up as a demo/student project to showcase my skills and experience in Rails development. Key phases of the Software Development Lifecycle were conducted and recorded/documented as part of this project.</p>
-                <h3>Why did I choose to build this project?</h3>
-                <p>You may or may not have yet read in my "About Me" page that I love going SCUBA diving, and when diving, you must always dive with someone else next to you at all times underwater, known as a "buddy". From my own personal experience, it’s difficult to find buddies sometimes, especially on self-organised trips. Excellent meetup platforms exist such as meetup.com for people to get together in thriving communities. Whilst it's certainly possible to host SCUBA diving meetups on such platforms, the interface and functionalities are not tailored specifically for recreational divers and dive instructors to be able to find and get together for the most compatible and tailored SCUBA diving experience. This is the key problem that is intended to be solved with "Bubble Buddies".</p>
-                <h3>What challenged you when making this project?</h3>
-                <p>I had designed an entire relational database schema for Bubble Buddies that would be hosted on PostgreSQL DBMS. However, implementation of the relationships between primary and foreign keys between the databases' tables, as well as implementation of the cardinality of relationships, proved to be confusing when converting my schema into Rails code.</p>
-                <h3>How did I get unstuck?</h3>
-                <p>For the above challenge I faced, I was being very resourceful and tried to debug it on my own. Without success, to waste no time, I sought assistance from our educator at the time, where I actively demonstrated what I tried so far, and thus we resolved the issue efficiently and with clarity of understanding.</p>
-                <h3>What was my process for completing this project?</h3>
-                <p>As I was still very much learning Ruby and Rails at the time, I adopted a compartmentalised, "prototype" development approach, with significant resourceful "Google'ing" if time permitted.</p>
-                <h3>What would I do differently next time?</h3>
-                <p>I would very much make the front-end UI/UX more intuitive, clean and responsive looking. Time-constraints meant I was only able to get the website to MVP before submission. I would also flesh out wireframes in much more detail to help me with the UI creation.</p>
-                <div class="popup-content-border"></div>
-                <h2>Source:</h2>
-                <p><span class="bold" style="word-wrap: break-word;"><a href="https://github.com/chullman/BubbleBuddies" target="_blank">https://github.com/chullman/BubbleBuddies</a></span></p>
-                <h3>Live Demo: <span class="bold" style="word-wrap: break-word;"><a href="https://bubble-buddies.herokuapp.com" target="_blank">https://bubble-buddies.herokuapp.com</a></span></h3>
-                <div class="popup-content-border"></div>
-                <h2>Key Technology:</h2>
-                <p>I had built this application using <span class="bold">Ruby on Rails v5.2.0</span> - a server-side web application framework written in Ruby based on the MVC structure.</p>
-                <p>I had designed and implemented a rudimentary relational database schema to be executed on a <span class="bold">PostgreSQL DBMS</span>.</p>
-                <p>Certain existing publically sourced APIs were utilised such as Google Maps and Stripe.</p>
-                <div class="popup-content-border"></div>
-                <h2>Screenshots:</h2>
-                <div class="project-screenshots">
-                    <img src="../assets/bb_main.png" alt="Screenshot of 'Bubble Buddies' Rails app">
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <article id="open-project-popup-2" class="project-popup">
-        <div>
-            <div class="popup-header">
-              <a href="#"><h2>Close:</h2></a>
-              <a href="#" title="Close" class="close-project-popup"><i class="fa fa-window-close"></i></a>
-            </div>
-            <div class="popup-content">
-              <h2>Application:</h2>
-              <h2>"SAP Dashboard"</h2>
-              <p>Designed and purposed with the objective to provide a more "user-friendly" interface for stakeholders to perform data analytics and gather information from select SAP ERP data marts with excellent <span class="bold">User Experience (UX)</span> in mind. Although it is in its prototype stage, the foundational code structure is all in place, ready to be built upon with relative ease with more dashboard functionality.</p>
-              <h3>Why did I choose to build this project?</h3>
-              <p>There was a critical business need that needed to be addressed and resolved as soon as possible; Critical because the business need could've escalated into a physical safety issue if left ignored. The SAP ERP interface made it challenging to gather and analyse the data for Business Intelligence, especially when it involved the exportation of such data onto rudimentary spreadsheets. I needed quickly developed and deployable web interface to gather the data (with help from some self-created SQL code to correlate the right data from the data marts), so I proactively chose ASP.NET MVC as the tool of choice, using Bootstrap 3 for rapid front-end development.</p>
-              <h3>What challenged you when making this project?</h3>
-              <p>Display the correlated data on the website as Business Intelligence required a tabular representation of the data for view by the user. I implemented an open-source jQuery template that I heavily modified to show this data, but JavaScript, let alone jQuery, was very confusing to me at the time.</p>
-              <h3>How did I get unstuck?</h3>
-              <p>Extensive resourceful and efficient "Google'ing" for solutions, as thankfully JavaScript is a very popular language in the world with countless resources available on the internet, and seeking help from an experienced colleague was unfortunately not an option at the time.</p>
-              <h3>What was my process for completing this project?</h3>
-              <p>Very much got stuck into development. I know this is certainly not software development best practice anywhere in the industry, but it allowed me to get a functional and tested "prototype" web app out at MVP level.</p>
-              <h3>What would I do differently next time?</h3>
-              <p>Upon reflection now, I realised I was overly ambitious and self-driven. I would've saved a lot of headache if I had just engaged with the company's primary IT SAP team and used third-party software for Business Intelligence visualisation such as Tableau.</p>
-              <div class="popup-content-border"></div>
-              <h2>Source:</h2>
-              <i>(Omitted for copyright reasons)</i>
-              <div class="popup-content-border"></div>
-              <h2>Key Technology:</h2>
-              <p>I had built this application using <span class="bold">ASP.NET MVC</span>.</p>
-              <p>Readily available, open-source jQuery snippets were utilised to assist with dynamic functionality of rendering the necessary key information for the user.</p>
-              <p>Bootstrap 3 was utilised to aid in rapid and easier front-end development.</p>
-              <div class="popup-content-border"></div>
-              <h2>Screenshots:</h2>
-              <div class="project-screenshots">
-                  <img src="../assets/sapdash_main.png" alt="Screenshot of 'SAP Dashboard' app">
-              </div>
-            </div>
-        </div>
-    </article>
-
-    <div id="desktop-view-background">
-
-        <main id="main-container">
-
-            <menu id="contact-fixed-sidebar">
-                <li>
-                    <a href="../assets/Resume_of_Christopher_Hullman_Coder_Academy_MOCK.pdf" target="_blank">
-                     <i class="fa-solid fa-file-lines">
-                         <span class="contact-fixed-sidebar-dialogbox">Resume</span>
-                     </i>
+        <!-- *COMPONENT* - The fixed project popup window that will display over the main content container for Project 1 when the user clicks on the Project 1 card -->
+        <article id="open-project-popup-1" class="project-popup">
+            <div>
+                <div class="popup-header">
+                    <a href="#">
+                        <h2>Close:</h2>
                     </a>
-                </li>
-                <li>
-                  <a href="mailto:cab011818@coderacademy.edu.au">
-                    <i class="fa-solid fa-envelope">
-                        <span class="contact-fixed-sidebar-dialogbox">Email</span>
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/chris.hullman" target="_blank">
-                    <i class="fa-brands fa-facebook-square">
-                        <span class="contact-fixed-sidebar-dialogbox">Facebook</span>
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/christopher-hullman/" target="_blank">
-                    <i class="fa-brands fa-linkedin">
-                        <span class="contact-fixed-sidebar-dialogbox">LinkedIn</span>
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/chullman" target="_blank">
-                    <i class="fa-brands fa-github-square">
-                        <span class="contact-fixed-sidebar-dialogbox">GitHub</span>
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://medium.com/@chrishullman" target="_blank">
-                    <i class="fa-solid fa-book">
-                        <span class="contact-fixed-sidebar-dialogbox">Medium</span>
-                    </i>
-                  </a>
-                </li>
-            </menu>
-
-            <nav id="topnav-flex-container">
-                <div id="topnav-logo">
-                    <img src="/assets/brand_logo.svg" alt="Ship Brand Logo">
+                    <a href="#" title="Close" class="close-project-popup">
+                        <i class="fa fa-window-close"></i>
+                    </a>
                 </div>
-                <div id="nav-horizontal-list-container">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li class="active-page"><a href="#">Web Dev</a></li>
-                        <li><a href="csharp.html">C#</a></li>
-                        <!-- Omitting for this assignment for now as only 4 HTML pages are required -->
-                        <!-- <li><a href="infrastructure.html">Support & Admin</a></li> -->
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="aboutme.html">About Me</a></li>
-                    </ul>
-                </div>
-                <div id="nav-hamburger-container">
-                    <h2 id="nav-hamburger-links-text">Links:</h2>
-                    <i class="fa-solid fa-bars fa-5x" id="nav-hamburger-custom"></i>
-                </div>
-                
-                <div id="hamburger-dropdown">
-                    <div id="dropdown-content-container">
-                        <a href="../index.html">Home</a>
-                        <a href="#">Web Dev</a>
-                        <a href="csharp.html">C#</a>
-                        <!-- Omitting for this assignment for now as only 4 HTML pages are required -->
-                        <!-- <a href="infrastructure.html">Support & Admin</a> -->
-                        <a href="blog.html">Blog</a>
-                        <a href="aboutme.html">About Me</a>
+                <div class="popup-content">
+                    <h2>Application:</h2>
+                    <h2>"Bubble Buddies"</h2>
+                    <p>Likened to the popular group event hosting and organisation platform, "meetup.com", this app was developed from the ground up as a demo/student project to showcase my skills and experience in Rails development. Key phases of the Software Development Lifecycle were conducted and recorded/documented as part of this project.</p>
+                    <h3>Why did I choose to build this project?</h3>
+                    <p>You may or may not have yet read in my "About Me" page that I love going SCUBA diving, and when diving, you must always dive with someone else next to you at all times underwater, known as a "buddy". From my own personal experience, it’s difficult to find buddies sometimes, especially on self-organised trips. Excellent meetup platforms exist such as meetup.com for people to get together in thriving communities. Whilst it's certainly possible to host SCUBA diving meetups on such platforms, the interface and functionalities are not tailored specifically for recreational divers and dive instructors to be able to find and get together for the most compatible and tailored SCUBA diving experience. This is the key problem that is intended to be solved with "Bubble Buddies".</p>
+                    <h3>What challenged you when making this project?</h3>
+                    <p>I had designed an entire relational database schema for Bubble Buddies that would be hosted on PostgreSQL DBMS. However, implementation of the relationships between primary and foreign keys between the databases' tables, as well as implementation of the cardinality of relationships, proved to be confusing when converting my schema into Rails code.</p>
+                    <h3>How did I get unstuck?</h3>
+                    <p>For the above challenge I faced, I was being very resourceful and tried to debug it on my own. Without success, to waste no time, I sought assistance from our educator at the time, where I actively demonstrated what I tried so far, and thus we resolved the issue efficiently and with clarity of understanding.</p>
+                    <h3>What was my process for completing this project?</h3>
+                    <p>As I was still very much learning Ruby and Rails at the time, I adopted a compartmentalised, "prototype" development approach, with significant resourceful "Google'ing" if time permitted.</p>
+                    <h3>What would I do differently next time?</h3>
+                    <p>I would very much make the front-end UI/UX more intuitive, clean and responsive looking. Time-constraints meant I was only able to get the website to MVP before submission. I would also flesh out wireframes in much more detail to help me with the UI creation.</p>
+                    <div class="popup-content-border"></div>
+                    <h2>Source:</h2>
+                    <p>
+                        <span class="bold" style="word-wrap: break-word;">
+                            <a href="https://github.com/chullman/BubbleBuddies" target="_blank">https://github.com/chullman/BubbleBuddies</a>
+                        </span>
+                    </p>
+                    <h3>Live Demo: <span class="bold" style="word-wrap: break-word;">
+                            <a href="https://bubble-buddies.herokuapp.com" target="_blank">https://bubble-buddies.herokuapp.com</a>
+                        </span>
+                    </h3>
+                    <div class="popup-content-border"></div>
+                    <h2>Key Technology:</h2>
+                    <p>I had built this application using <span class="bold">Ruby on Rails v5.2.0</span> - a server-side web application framework written in Ruby based on the MVC structure. </p>
+                    <p>I had designed and implemented a rudimentary relational database schema to be executed on a <span class="bold">PostgreSQL DBMS</span>. </p>
+                    <p>Certain existing publically sourced APIs were utilised such as Google Maps and Stripe.</p>
+                    <div class="popup-content-border"></div>
+                    <h2>Screenshots:</h2>
+                    <div class="project-screenshots">
+                        <img src="../assets/bb_main.png" alt="Screenshot of 'Bubble Buddies' Rails app">
                     </div>
                 </div>
-            </nav>
-
-            <div id="jumbo-header-behind">
             </div>
-            <div id="jumbo-header-front">
-              <h1><span>&lt;</span> Web Development <span>/&gt;</span></h1>
-              <div id="anchor"></div>
-            </div>
+        </article>
+        <!-- *END COMPONENT* -->
 
-            <section class="generic-flex-container">
-                <h2 class="bold">Skills and Experience</h2>
-                <ul>
-                    <li>
-                        Competent in building 100% responsive websites from scratch using <span class="bold">HTML5 and CSS</span>. Demonstrated ability in using SASS as a CSS preprocessor to aid in ease of code maintainability and reuse. Attention to detail is always paramount in planning, design and development of such websites, to effectively combine aesthetics and accessibility.
-                    </li>
-                    <li>
-                        Entry-level competency in using <span class="bold">JavaScript</span> to dynamically manipulate elements and/or their styling in the DOM for an even greater UI/UX experience for the user.
-                    </li>
-                    <li>
-                        A prior intermediate-level understanding and experience in the generation and customisation of a <span class="bold">Ruby on Rails</span> based web application, taking advantage of and implementing various powerful Gems to aid in functionality, security, and UI/UX. (See "Project 1" below).
-                    </li>
-                    <li>
-                        Prior real-world support and maintenance of <span class="bold">legacy ASP.NET</span> based web applications built under the MVC code architecture, that was <span class="bold">still largely utilised by a significant number of end-users</span>.
-                    </li>
-                    <li>
-                        Prior real-world experience in building and customising a <span class="bold">modern ASP.NET MVC</span> web application that <span class="bold">added value to a critical business need</span>, built upon Bootstrap for quick development. This app included my customisation and implementation of a jQuery template fit for business purposes. (See "Project 2" below).
-                    </li>
-                    <li>
-                        Real-world exposure and both professional and academic training in the <span class="bold">agile methodology throughout the software development lifecycle, utilising scrum and/or kanban frameworks</span> where appropriate and implemented.
-                    </li>
-                </ul>
-            </section>
-
-            <section id="projects-container">
-                <h2 class="bold">Example Projects I've Done:</h2>
-                <div id="project-cards-container">
-
-                    <div class="project-card-content-container">
-                      <h2>> Project 1</h2>
-                      
-                      <h4>Demo MVC App - Ruby on Rails</h4>
-                      <a class="button button-primary">GO</a>
-                      
-                      <div class="projects-thumb">
-                          <img src="../assets/rails_logo.png" alt="Rails Logo Thumbnail">
-                      </div>
-                      
-                      <a href="#open-project-popup-1" class="card-wrap"></a>
-                    </div>
-
-                    <div class="project-card-content-container">
-                      <h2>> Project 2</h2>
-                      <h4>MVC App - ASP.NET</h4>
-                      <a class="button button-primary">GO</a>
-      
-                      <div class="projects-thumb">
-                          <img src="../assets/asp_logo.png" alt="ASP.NET Logo Thumbnail">
-                      </div>
-      
-                      <a href="#open-project-popup-2" class="card-wrap"></a>
-                    </div>
-                  </div>
-
-            </section>
-
-            <footer class="footer-container">
-                <div id="footer-container-title">
-                    <h1>Contact Me: <i class="fa-solid fa-arrow-down"></i><i class="fa-solid fa-arrow-right"></i></h1>
-                    <h3>&lt;dock /&gt;</h3>
+        <!-- *COMPONENT* - The fixed project popup window that will display over the main content container for Project 2 when the user clicks on the Project 2 card -->
+        <article id="open-project-popup-2" class="project-popup">
+            <div>
+                <div class="popup-header">
+                    <a href="#">
+                        <h2>Close:</h2>
+                    </a>
+                    <a href="#" title="Close" class="close-project-popup">
+                        <i class="fa fa-window-close"></i>
+                    </a>
                 </div>
-                <div id="footer-container-links">
-                    <ul>
-                        <li>
-                            <a href="../assets/Resume_of_Christopher_Hullman_Coder_Academy_MOCK.pdf" target="_blank">
-                            <span><i class="fa-solid fa-file-lines"></i></span>
-                            <span class="contact-text">Resume PDF</span>
-                            </a>
-                        </li>
-                        <li>
+                <div class="popup-content">
+                    <h2>Application:</h2>
+                    <h2>"SAP Dashboard"</h2>
+                    <p>Designed and purposed with the objective to provide a more "user-friendly" interface for stakeholders to perform data analytics and gather information from select SAP ERP data marts with excellent <span class="bold">User Experience (UX)</span> in mind. Although it is in its prototype stage, the foundational code structure is all in place, ready to be built upon with relative ease with more dashboard functionality. </p>
+                    <h3>Why did I choose to build this project?</h3>
+                    <p>There was a critical business need that needed to be addressed and resolved as soon as possible; Critical because the business need could've escalated into a physical safety issue if left ignored. The SAP ERP interface made it challenging to gather and analyse the data for Business Intelligence, especially when it involved the exportation of such data onto rudimentary spreadsheets. I needed quickly developed and deployable web interface to gather the data (with help from some self-created SQL code to correlate the right data from the data marts), so I proactively chose ASP.NET MVC as the tool of choice, using Bootstrap 3 for rapid front-end development.</p>
+                    <h3>What challenged you when making this project?</h3>
+                    <p>Display the correlated data on the website as Business Intelligence required a tabular representation of the data for view by the user. I implemented an open-source jQuery template that I heavily modified to show this data, but JavaScript, let alone jQuery, was very confusing to me at the time.</p>
+                    <h3>How did I get unstuck?</h3>
+                    <p>Extensive resourceful and efficient "Google'ing" for solutions, as thankfully JavaScript is a very popular language in the world with countless resources available on the internet, and seeking help from an experienced colleague was unfortunately not an option at the time.</p>
+                    <h3>What was my process for completing this project?</h3>
+                    <p>Very much got stuck into development. I know this is certainly not software development best practice anywhere in the industry, but it allowed me to get a functional and tested "prototype" web app out at MVP level.</p>
+                    <h3>What would I do differently next time?</h3>
+                    <p>Upon reflection now, I realised I was overly ambitious and self-driven. I would've saved a lot of headache if I had just engaged with the company's primary IT SAP team and used third-party software for Business Intelligence visualisation such as Tableau.</p>
+                    <div class="popup-content-border"></div>
+                    <h2>Source:</h2>
+                    <i>(Omitted for copyright reasons)</i>
+                    <div class="popup-content-border"></div>
+                    <h2>Key Technology:</h2>
+                    <p>I had built this application using <span class="bold">ASP.NET MVC</span>. </p>
+                    <p>Readily available, open-source jQuery snippets were utilised to assist with dynamic functionality of rendering the necessary key information for the user.</p>
+                    <p>Bootstrap 3 was utilised to aid in rapid and easier front-end development.</p>
+                    <div class="popup-content-border"></div>
+                    <h2>Screenshots:</h2>
+                    <div class="project-screenshots">
+                        <img src="../assets/sapdash_main.png" alt="Screenshot of 'SAP Dashboard' app">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- *END COMPONENT* -->
+
+        <!-- Container for the main background image that will cover the entire screen behind the primary content container.
+    This will only be visible on large desktop browser screens - i.e. greater than 1280px width -->
+        <div id="desktop-view-background">
+
+            <!-- ALL content (except for the main background above, and left-side fixed "contact me" nav bar) will be held in this MAIN CONTENT CONTAINER at 100% height and a max-width of 1280px.
+        This content includes the primary top nav bar, the primary bottom "contact me" footer, all text,all images (except for the main background), and all card components. -->
+            <main id="main-container">
+
+                <!-- *COMPONENT* - LEFT-SIDE FIXED "CONTACT ME" NAV BAR with text tooltip popups on hover. ONLY VISIBLE ON DESKTOP BROWSERS AND OTHER LARGE SCREENS ON ALL HTML PAGES -->
+                <menu id="contact-fixed-sidebar">
+                    <li>
+                        <a href="../assets/Resume_of_Christopher_Hullman_Coder_Academy_MOCK.pdf" target="_blank">
+                            <i class="fa-solid fa-file-lines">
+                                <span class="contact-fixed-sidebar-dialogbox">Resume</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li>
                         <a href="mailto:cab011818@coderacademy.edu.au">
-                        <span><i class="fa-solid fa-envelope"></i></span>
-                        <span class="contact-text">cab011818@coderacademy.edu.au</span>
+                            <i class="fa-solid fa-envelope">
+                                <span class="contact-fixed-sidebar-dialogbox">Email</span>
+                            </i>
                         </a>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         <a href="https://www.facebook.com/chris.hullman" target="_blank">
-                        <span><i class="fa-brands fa-facebook-square"></i></span>
-                        <span class="contact-text">facebook.com/chris.hullman</span>
+                            <i class="fa-brands fa-facebook-square">
+                                <span class="contact-fixed-sidebar-dialogbox">Facebook</span>
+                            </i>
                         </a>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         <a href="https://www.linkedin.com/in/christopher-hullman/" target="_blank">
-                        <span><i class="fa-brands fa-linkedin"></i></span>
-                        <span class="contact-text">linkedin.com/in/christopher-hullman</span>
+                            <i class="fa-brands fa-linkedin">
+                                <span class="contact-fixed-sidebar-dialogbox">LinkedIn</span>
+                            </i>
                         </a>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         <a href="https://github.com/chullman" target="_blank">
-                        <span><i class="fa-brands fa-github-square"></i></span>
-                        <span class="contact-text">github.com/chullman</span>
+                            <i class="fa-brands fa-github-square">
+                                <span class="contact-fixed-sidebar-dialogbox">GitHub</span>
+                            </i>
                         </a>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         <a href="https://medium.com/@chrishullman" target="_blank">
-                        <span><i class="fa-solid fa-book"></i></span>
-                        <span class="contact-text">medium.com/@chrishullman</span>
+                            <i class="fa-solid fa-book">
+                                <span class="contact-fixed-sidebar-dialogbox">Medium</span>
+                            </i>
                         </a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
+                    </li>
+                </menu>
+                <!-- *END COMPONENT* -->
 
-        </main>
-    </div>
-    
-</body>
+                <!-- *COMPONENT* - PRIMARY TOP NAV BAR. Visible on ALL HTML PAGES, except when there's a project popup window open. -->
+                <nav id="topnav-flex-container">
+                    <div id="topnav-logo">
+                        <img src="/assets/brand_logo.svg" alt="Ship Brand Logo">
+                    </div>
+                    <!-- Nav links to every HTML page displayed in a row on tablet and desktop browser views -->
+                    <div id="nav-horizontal-list-container">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li class="active-page">
+                                <a href="#">Web Dev</a>
+                            </li>
+                            <li>
+                                <a href="csharp.html">C#</a>
+                            </li>
+                            <!-- Omitting for this assignment for now as only 4 HTML pages are required -->
+                            <!-- <li><a href="infrastructure.html">Support & Admin</a></li> -->
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="aboutme.html">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Else, for small mobile views, nav links to every HTML page are displayed in a dropdown box that becomes visible when the user touches the "hamburger" icon
+                or the "Links:" text above the icon -->
+                    <div id="nav-hamburger-container">
+                        <h2 id="nav-hamburger-links-text">Links:</h2>
+                        <i class="fa-solid fa-bars fa-5x" id="nav-hamburger-custom"></i>
+                    </div>
+                    <!-- The dropdown box -->
+                    <div id="hamburger-dropdown">
+                        <div id="dropdown-content-container">
+                            <a href="../index.html">Home</a>
+                            <a href="#">Web Dev</a>
+                            <a href="csharp.html">C#</a>
+                            <!-- Omitting for this assignment for now as only 4 HTML pages are required -->
+                            <!-- <a href="infrastructure.html">Support & Admin</a> -->
+                            <a href="blog.html">Blog</a>
+                            <a href="aboutme.html">About Me</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- *END COMPONENT* -->
+
+                <!-- *COMPONENT* - SUBPAGE TITLE HEADER WITH ANCHOR ICON -->
+                <div id="jumbo-header-behind"></div>
+                <div id="jumbo-header-front">
+                    <h1>
+                        <span>&lt;</span> Web Development <span>/&gt;</span>
+                    </h1>
+                    <div id="anchor"></div>
+                </div>
+                <!-- *END COMPONENT* -->
+
+                <section class="generic-flex-container">
+                    <h2 class="bold">Skills and Experience</h2>
+                    <ul>
+                        <li> Competent in building 100% responsive websites from scratch using <span class="bold">HTML5 and CSS</span>. Demonstrated ability in using SASS as a CSS preprocessor to aid in ease of code maintainability and reuse. Attention to detail is always paramount in planning, design and development of such websites, to effectively combine aesthetics and accessibility. </li>
+                        <li> Entry-level competency in using <span class="bold">JavaScript</span> to dynamically manipulate elements and/or their styling in the DOM for an even greater UI/UX experience for the user. </li>
+                        <li> A prior intermediate-level understanding and experience in the generation and customisation of a <span class="bold">Ruby on Rails</span> based web application, taking advantage of and implementing various powerful Gems to aid in functionality, security, and UI/UX. (See "Project 1" below). </li>
+                        <li> Prior real-world support and maintenance of <span class="bold">legacy ASP.NET</span> based web applications built under the MVC code architecture, that was <span class="bold">still largely utilised by a significant number of end-users</span>. </li>
+                        <li> Prior real-world experience in building and customising a <span class="bold">modern ASP.NET MVC</span> web application that <span class="bold">added value to a critical business need</span>, built upon Bootstrap for quick development. This app included my customisation and implementation of a jQuery template fit for business purposes. (See "Project 2" below). </li>
+                        <li> Real-world exposure and both professional and academic training in the <span class="bold">agile methodology throughout the software development lifecycle, utilising scrum and/or kanban frameworks</span> where appropriate and implemented. </li>
+                    </ul>
+                </section>
+
+                <!-- *COMPONENT* - PROJECTS CARDS CONTAINER, and all nested cards -->
+                <section id="projects-container">
+                    <h2 class="bold">Example Projects I've Done:</h2>
+                    <div id="project-cards-container">
+                        <!-- Project 1 link - like with the cards on the Home Page, the entire card is a clickable link
+                    Rather than direct the user to a new HTML page, this will rather point to href="#some-id" to open up a fixed popup window
+                    filling and overlapping the entire main content container -->
+                        <div class="project-card-content-container">
+                            <h2>> Project 1</h2>
+                            <h4>Demo MVC App - Ruby on Rails</h4>
+                            <a class="button button-primary">GO</a>
+                            <div class="projects-thumb">
+                                <img src="../assets/rails_logo.png" alt="Rails Logo Thumbnail">
+                            </div>
+                            <a href="#open-project-popup-1" class="card-wrap"></a>
+                        </div>
+                        <!-- Project 2 link -->
+                        <div class="project-card-content-container">
+                            <h2>> Project 2</h2>
+                            <h4>MVC App - ASP.NET</h4>
+                            <a class="button button-primary">GO</a>
+                            <div class="projects-thumb">
+                                <img src="../assets/asp_logo.png" alt="ASP.NET Logo Thumbnail">
+                            </div>
+                            <a href="#open-project-popup-2" class="card-wrap"></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- *END COMPONENT* -->
+
+                <!-- *COMPONENT* - PRIMARY FOOTER "CONTACT ME" LINKS CONTAINER -->
+                <footer class="footer-container">
+                    <div id="footer-container-title">
+                        <!-- Either a down-arrow icon is displayed next to "Contact Me:" title, or a right-arrow icon, depending whether the container's content is
+                    in a row or column depending on screen size -->
+                        <h1>Contact Me: <i class="fa-solid fa-arrow-down"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </h1>
+                        <h3>&lt;dock /&gt;</h3>
+                    </div>
+                    <div id="footer-container-links">
+                        <ul>
+                            <li>
+                                <a href="../assets/Resume_of_Christopher_Hullman_Coder_Academy_MOCK.pdf" target="_blank">
+                                    <span>
+                                        <i class="fa-solid fa-file-lines"></i>
+                                    </span>
+                                    <span class="contact-text">Resume PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:cab011818@coderacademy.edu.au">
+                                    <span>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <span class="contact-text">cab011818@coderacademy.edu.au</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/chris.hullman" target="_blank">
+                                    <span>
+                                        <i class="fa-brands fa-facebook-square"></i>
+                                    </span>
+                                    <span class="contact-text">facebook.com/chris.hullman</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/christopher-hullman/" target="_blank">
+                                    <span>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </span>
+                                    <span class="contact-text">linkedin.com/in/christopher-hullman</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/chullman" target="_blank">
+                                    <span>
+                                        <i class="fa-brands fa-github-square"></i>
+                                    </span>
+                                    <span class="contact-text">github.com/chullman</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@chrishullman" target="_blank">
+                                    <span>
+                                        <i class="fa-solid fa-book"></i>
+                                    </span>
+                                    <span class="contact-text">medium.com/@chrishullman</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+                <!-- *END COMPONENT* -->
+
+            </main>
+            
+        </div>
+    </body>
 </html>
