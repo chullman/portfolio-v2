@@ -59,7 +59,8 @@
   padding: 3%;
   transition: all 0.3s ease-in;
 }
-#project-cards-container .project-card-content-container h2, #project-cards-container .project-card-content-container h4 {
+#project-cards-container .project-card-content-container h2,
+#project-cards-container .project-card-content-container h4 {
   color: white;
   font-weight: 300;
   margin-top: 0;

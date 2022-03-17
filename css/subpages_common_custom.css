@@ -40,14 +40,13 @@ SUBPAGES TITLE HEADER
   width: 80%;
 }
 
-#jumbo-header-front #anchor {
-  content: url("../assets/anchor_icon.png");
+#jumbo-header-front > #anchor {
   visibility: hidden;
   transform: scale(0.5, 0.5) translateY(-70px);
 }
 
 @media only screen and (min-width: 768px) {
-  #jumbo-header-front #anchor {
+  #jumbo-header-front > #anchor {
     visibility: visible;
   }
 

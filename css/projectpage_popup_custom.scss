@@ -4,9 +4,7 @@
 
 @import "variables";
 
-
 .project-popup {
-
   position: fixed;
   background-color: white;
   top: 0;
@@ -25,7 +23,7 @@
 
   overflow-y: scroll;
 
-  &>div {
+  & > div {
     padding: 0;
   }
 
@@ -36,9 +34,7 @@
     height: 100px;
     display: inline-block;
     padding-right: 20px;
-
   }
-
 }
 
 //   The CSS :target pseudo-selector in CSS matches when the hash in the URL and the id of an element are the same
@@ -46,10 +42,8 @@
 //   e.g. when the URL is webdev.html#open-project-popup-1, the below :target pseudo-selector will find the element with the id open-project-popup-1
 
 :target {
-
   // Show the popup in its entirety
   display: block;
-
 }
 
 .popup-header {
@@ -72,7 +66,6 @@
   }
 }
 
-
 @media only screen and (min-width: 768px) {
   .project-popup {
     margin-left: auto;
@@ -87,16 +80,12 @@
   font-size: 2em;
   color: $aesthetic-border-color;
   background-color: $project-header-background-color;
-
 }
-
-
-
 
 .popup-content {
   padding: 5% 5% 5% 5%;
 
-  &>p {
+  & > p {
     font-size: 1.2em;
   }
 
@@ -114,10 +103,7 @@
     padding-bottom: 1%;
     width: 100%;
   }
-
 }
-
-
 
 .project-screenshots {
   display: flex;
@@ -129,7 +115,7 @@
   padding: 0;
   margin: 0;
 
-  &>img {
+  & > img {
     padding: 15px 15px 15px 15px;
     max-width: 100%;
     max-height: 100%;

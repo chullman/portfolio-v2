@@ -4,476 +4,444 @@
 
 @import "variables";
 
+html,
+body {
+  /* prevents horizonal scrolling */
+  overflow-x: hidden;
 
-html, body {
-    /* prevents horizonal scrolling */
-    overflow-x: hidden;
-
-    font-family: $body-google-font-family;
-
+  font-family: $body-google-font-family;
 }
 
 .bold {
-    font-weight: bold;
-    font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .stronger-h2-letters {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 #desktop-view-background {
-    background-image: url(../assets/background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+  background-image: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* MAIN CONTENT CONTAINER - holds the entirety of the primary content */
 #main-container {
-    padding: 0;
-    //margin: 0;
-    width: 100%;
-    max-width: 100%;
+  padding: 0;
+  //margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+  #main-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
   }
+}
 
-
-  
-  @media only screen and (min-width: 1280px) {
-    #main-container {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 1280px;
-    }
-  }
-  
-
-  /*
+/*
   TOP NAV BAR
   */
 
-  #topnav-flex-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height: 164px;
-      width: 100%;
-      align-items: center;
-      justify-content: space-between;
-      background-color: $navbar-background-color;
-      padding-bottom: 10px;
-      position: relative;
-      padding-bottom: 0;
+#topnav-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 164px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $navbar-background-color;
+  padding-bottom: 10px;
+  position: relative;
+  padding-bottom: 0;
+}
+
+#topnav-logo {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & > img {
+    width: 100px;
+    height: 100%;
   }
+}
 
-  #topnav-logo {
-      margin-left: 20px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-
-      &>img {
-        width: 100px;
-        height: 100%;
-      }
+#nav-hamburger-container {
+  & > h2 {
+    font-family: "Montserrat", sans-serif;
+    color: $aesthetic-text-color;
+    margin-right: 20px;
   }
+}
 
+#nav-horizontal-list-container {
+  // Initially hidden, because in our mobile-first design, we want the hamburger nav icon to show by default instead
+  display: none;
+}
 
+@media only screen and (min-width: 768px) {
   #nav-hamburger-container {
-      
-      &>h2 {
-        font-family: 'Montserrat', sans-serif;
-        color: $aesthetic-text-color;
-        margin-right: 20px;
-      }
+    display: none;
   }
 
   #nav-horizontal-list-container {
+    display: flex;
 
-      // Initially hidden, because in our mobile-first design, we want the hamburger nav icon to show by default instead
-      display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1%;
+    position: relative;
+    border-bottom: none;
+    flex: 0 1 auto;
+    height: 100%;
+
+    .active-page {
+      background-color: #fc9e49;
+    }
+
+    & > ul {
+      border-bottom: 5px solid #fc9e49;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    & > ul > li {
+      text-align: left;
+      transition: all 300ms ease-in-out 0s;
+
+      border-bottom: 5px solid transparent;
+      float: left;
+      margin-bottom: -5px;
+    }
+
+    & > ul > li:hover {
+      background-color: #fc9e49;
+      color: #ffffff;
+      display: block;
+    }
+
+    & > ul > li > a {
+      display: block;
+      text-decoration: none;
+      white-space: normal;
+      color: white;
+      font-size: 1em;
+      line-height: 49px;
+      padding: 0 15px;
+      text-transform: uppercase;
+    }
   }
-
-  @media only screen and (min-width: 768px) {
-    #nav-hamburger-container {
-        display: none;
-    }
-
-    #nav-horizontal-list-container {
-        display: flex;
-
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-
-        list-style: none outside none;
-        margin: 0;
-        padding: 0;
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: 1%;
-        position: relative;
-        border-bottom: none;
-        flex: 0 1 auto;
-        height: 100%;
-
-        .active-page {
-            background-color: #FC9E49;
-        }
-
-        &>ul {
-            border-bottom: 5px solid #FC9E49;
-            padding: 0;
-            list-style-type: none;
-
-        }
-
-        &>ul>li {
-            text-align: left;
-            transition: all 300ms ease-in-out 0s;
-
-            border-bottom: 5px solid transparent;
-            float: left;
-            margin-bottom: -5px;
-        }
-
-        &>ul>li:hover {
-            background-color: #FC9E49;
-            color: #FFFFFF;
-            display: block;
-        }
-
-        &>ul>li>a {
-            display: block;
-            text-decoration: none;
-            white-space: normal;
-            color: white;
-            font-size: 1em;
-            line-height: 49px;
-            padding: 0 15px;
-            text-transform: uppercase;
-        }
-    }
-
 }
 
+#nav-hamburger-custom {
+  color: $nav-hamburger-color;
+  margin-right: 20px;
+}
 
-  #nav-hamburger-custom {
-      color: $nav-hamburger-color;
-      margin-right: 20px;
+#hamburger-dropdown {
+  position: absolute;
+  top: 174px;
+  right: 10px;
+  width: 200px;
+
+  background-color: white;
+  z-index: 3; // Ensure the dropdown is always on the front of all other page graphics
+
+  display: none; // JS will be used to change this to block on click of the hamburger
+
+  border: 5px solid $aesthetic-border-color;
+  box-shadow: 10px 10px 10px gray;
+}
+
+#dropdown-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
+
+  & > a {
+    border-top: $aesthetic-border-color solid 1px;
+    border-bottom: $aesthetic-border-color solid 1px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+    height: 40px;
+    display: inline-block;
+
+    text-decoration: none;
+    text-transform: uppercase;
   }
-
-
-  #hamburger-dropdown {
-      position: absolute;
-      top: 174px;
-      right: 10px;
-      width: 200px;
-
-      background-color: white;
-      z-index: 3; // Ensure the dropdown is always on the front of all other page graphics
-
-      
-      display: none; // JS will be used to change this to block on click of the hamburger
-
-
-
-      border: 5px solid $aesthetic-border-color;
-      box-shadow: 10px 10px 10px gray;
-  }
-
-  #dropdown-content-container {
-
-    
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        height: 100%;
-
-
-        &>a {
-            border-top: $aesthetic-border-color solid 1px;
-            border-bottom: $aesthetic-border-color solid 1px;
-            width: 100%;
-            text-align: center;
-            line-height: 40px;
-            margin: 0;
-            height: 40px;
-            display: inline-block;
-
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-    
-  }
+}
 
 /*
 FIXED CONTACT ME LINKS ON SIDE OF DESKTOP VIEW
 */
 
-
 #contact-fixed-sidebar {
-    display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 1360px) {
+  #contact-fixed-sidebar {
+    display: block;
+    position: fixed;
+    left: 0px;
+    padding-left: 0;
+    margin: 0;
+    top: 35%;
+    list-style-type: none;
+    z-index: 4;
+    background-color: $dialogbox-background-color;
+
+    .contact-fixed-sidebar-dialogbox {
+      display: none;
+    }
+
+    // Had to make this relative so that the child absolute positioned dialog box for each list item can have the "top" attribute relative to this
+    li > a > i {
+      position: relative;
+    }
+  }
+
+  @media only screen and (max-height: 480px) {
     #contact-fixed-sidebar {
-        display: block;
-        position: fixed;
-        left: 0px;
-        padding-left: 0;
-        margin: 0;
-        top: 35%;
-        list-style-type: none;
-        z-index: 4;
-        background-color: $dialogbox-background-color;
-
-        .contact-fixed-sidebar-dialogbox {
-            display: none;
-        }
-
-        // Had to make this relative so that the child absolute positioned dialog box for each list item can have the "top" attribute relative to this
-        li>a>i {
-            position: relative;
-        }
-
+      top: 0;
     }
+  }
 
-    @media only screen and (max-height: 480px) {
-        #contact-fixed-sidebar {
-            top: 0;
-        }
+  #contact-fixed-sidebar li:hover {
+    .contact-fixed-sidebar-dialogbox {
+      display: block;
+      position: absolute;
+      left: 60px;
+      top: 0;
+      z-index: 2;
+      background-color: $dialogbox-background-color;
+      border-radius: 20px;
+
+      font-family: $body-google-font-family;
+      font-weight: 100;
+      margin: 0;
+      padding: 10px;
     }
+  }
 
-    #contact-fixed-sidebar li:hover {
-        .contact-fixed-sidebar-dialogbox {
-            display: block;
-            position: absolute;
-            left: 60px;
-            top: 0;
-            z-index: 2;
-            background-color: $dialogbox-background-color;
-            border-radius: 20px;
-            
-            font-family: $body-google-font-family;
-            font-weight: 100;
-            margin: 0;
-            padding: 10px;
-            
+  #contact-fixed-sidebar a {
+    text-decoration: none;
+    display: block;
+  }
 
-        }
-    }
-
-    #contact-fixed-sidebar a {
-        text-decoration: none;
-        display: block;
-    }
-
-    #contact-fixed-sidebar i {
-
-        text-align: center;
-        background-color: $fixed-contact-sidebar-background-color;
-        width: 40px;
-        color: white;
-        height: 100%;
-        font-size: 2em;
-        padding: 10px;
-
-    }
-
+  #contact-fixed-sidebar i {
+    text-align: center;
+    background-color: $fixed-contact-sidebar-background-color;
+    width: 40px;
+    color: white;
+    height: 100%;
+    font-size: 2em;
+    padding: 10px;
+  }
 }
 
-  
 /*
 CARDS - COMMON STYLING
 */
 
 // Transparently overlays the entire card to make the entire card a clickable anchor link - not just the card's button
 .card-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline;
 }
 
 .button {
-    display: inline-block;
-    height: 38px;
-    padding: 0 30px;
-    color: #555;
-    text-align: center;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 38px;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid #bbb;
-    box-sizing: border-box;
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
 }
 
 .button-primary {
-    display: block;
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 70%;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid $aesthetic-border-color;
-    background-color: $card-button-background-color;
-    border-color: $aesthetic-border-color;
-    font-size: 15px;
-    color: white;
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $aesthetic-border-color;
+  background-color: $card-button-background-color;
+  border-color: $aesthetic-border-color;
+  font-size: 15px;
+  color: white;
 }
 
-  /*
+/*
   BOTTOM CONTACT ME FOOTER
   */
 
 .footer-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
 
-    border-top: 5px solid $aesthetic-border-color;
-    background-color: $footer-background-color;
-
+  border-top: 5px solid $aesthetic-border-color;
+  background-color: $footer-background-color;
 }
 
 #footer-container-title {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    //width: 400px;
-    max-width: 100%;
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 5%;
-    padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  //width: 400px;
+  max-width: 100%;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5%;
+  padding-right: 5%;
 
+  // In the "contact me" title, hide the right arrow and show the down arrow when the footer contents are in a column
+  .fa-arrow-right {
+    display: none;
+  }
 
-    // In the "contact me" title, hide the right arrow and show the down arrow when the footer contents are in a column
-    .fa-arrow-right {
-        display: none;
-    }
+  .fa-arrow-down {
+    display: inline-block;
+  }
 
-    .fa-arrow-down {
-        display: inline-block;
-    }
+  // I had to enforce a very specific max-width here for the two arrow types so that it changes correctly (see above) depending
+  // on whether the footer contents are in a row or column
+  .fa-arrow-right,
+  .fa-arrow-down {
+    max-width: 34.41px;
+  }
 
-    // I had to enforce a very specific max-width here for the two arrow types so that it changes correctly (see above) depending
-    // on whether the footer contents are in a row or column
-    .fa-arrow-right, .fa-arrow-down {
-        max-width: 34.41px;
-    }
+  & > h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+  }
 
-    &>h1 {
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        margin: 0;
-        font-size: 3.0rem;
-        font-weight: 300;
-        line-height: 1.2;
-        letter-spacing: -.1rem;
-    }
-
-    &>h3 {
-        color: $aesthetic-text-color;
-        margin: 0;
-        font-size: 2.0rem;
-        font-weight: 300;
-        line-height: 1.2;
-    }
+  & > h3 {
+    color: $aesthetic-text-color;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
 }
 
 #footer-container-links {
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: space-between;
-    //width: 500px;
-    max-width:100%;
-    height: 100%;
-    padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 100%;
+  padding-top: 10px;
 
-    .contact-text {
-        font-size: 12px;
-        font-weight: bold;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        margin: auto 0 0 0;
-        transform: translateY(10px);
-    }
+  .contact-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: auto 0 0 0;
+    transform: translateY(10px);
+  }
 
-    .fa-brands, .fa-solid {
-        margin-right: 10px;
-    }
+  .fa-brands,
+  .fa-solid {
+    margin-right: 10px;
+  }
 
-    ul {
-        display: block;
-        position: relative;
-        width: 100%;
-        list-style-position: inside;
-    }
+  ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    list-style-position: inside;
+  }
 
-    li {
-        position: relative;
-        display: block;
-        list-style-type: none;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  li {
+    position: relative;
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
-    span {
-        color: white;
-        height: 200px;
-        font-size: 2em;
-        text-align: left;
-    }
-
+  span {
+    color: white;
+    height: 200px;
+    font-size: 2em;
+    text-align: left;
+  }
 }
 
 // In the "contact me" title, show the right arrow and hide the down arrow when the footer contents are in a row for larger viewports
 // Like as per commented about the arrows above, I had to enforce a very specific min-width here for the two arrow types so that
 // it changes correctly (see above) depending on whether the footer contents are in a row or column
 @media only screen and (min-width: 804.1px) {
-#footer-container-title {
+  #footer-container-title {
+    .fa-arrow-right {
+      display: inline-block;
+    }
 
-        .fa-arrow-right {
-            display: inline-block;
-        }
-
-        .fa-arrow-down {
-            display: none;
-        }
-
-    }   
+    .fa-arrow-down {
+      display: none;
+    }
+  }
 }
-
-
 
 /*
 GENERIC FLEX CONTAINER - MOST SUBPAGES WILL LIKELY USE THIS CLASS
@@ -481,13 +449,13 @@ Column flex direction by default for mobile-first
 */
 
 .generic-flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 30px;
-    align-items: flex-start;
-    justify-content: center;
-    box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+  background-color: white;
 }

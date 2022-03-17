@@ -235,13 +235,17 @@ CARDS LINK SECTION
 #cards-container {
   padding-top: 30px;
 }
-#cards-container h1, #cards-container h3, #cards-container h5, #cards-container p {
+#cards-container h1,
+#cards-container h3,
+#cards-container h5,
+#cards-container p {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #cards-container h1 {
   font-size: 3rem;
 }
-#cards-container h1, #cards-container h3 {
+#cards-container h1,
+#cards-container h3 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
