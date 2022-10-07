@@ -1,13 +1,12 @@
 # Portfolio of Christopher (Chris) Hullman
-### *For 'Coder Academy' Web Development 2022 Standard (Feb. intake)*
 
 ## Update (07/10/2022)
-**This *CA-original* Git branch is the original assignment submission for 'Coder Academy'. As such, there is currently not live deployment of this branch, so the below link has been omitted.**
-**Please refer to the *master* branch for the latest active deployment.**
+**This source code is currently under development construction for public distribution of the below published live website of this *master* branch.**
+**For the original 'Coder Academy' 2022 assignment submission, please refer to Git branch *CA-original*.**
 
 ## Link to Live Website:
 
-**(*OMITTED*)**
+[**https://www.chullman.com**](https://www.chullman.com/)
 
 ## Portfolio Description
 
