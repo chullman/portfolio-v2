@@ -238,16 +238,6 @@ CARDS LINK SECTION
   border-bottom: 5px solid $aesthetic-border-color;
 }
 
-#cards-container #blog-logo {
-  height: 50%;
-  width: 100%;
-  border-bottom: 5px solid $aesthetic-border-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 #cards-container .about-card {
   background-color: $card-background-color;
   align-items: center;
@@ -288,31 +278,6 @@ CARDS LINK SECTION
   height: 50%;
   display: block;
   position: relative;
-}
-
-#blog-card-bottom-half {
-  padding: 10%;
-  background-color: $card-background-color;
-  height: 50%;
-  display: block;
-  position: relative;
-  text-align: center;
-
-  & > h2 {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    font-weight: 300;
-    font-size: 3rem;
-  }
-
-  & > h3 {
-    color: $aesthetic-text-color;
-    margin: 0;
-    font-size: 2rem;
-    line-height: 1.3;
-  }
 }
 
 .card-description {
