@@ -326,6 +326,17 @@ CARDS - COMMON STYLING
   background-color: $footer-background-color;
 }
 
+.copyright-container {
+  border-top: 1px solid $aesthetic-border-color;
+  justify-content: flex-end;
+  & > p {
+    color: lightgrey;
+    font-style: italic;
+    margin-right: 30px;
+  }
+
+}
+
 #footer-container-title {
   display: flex;
   flex-direction: column;

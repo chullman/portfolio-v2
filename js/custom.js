@@ -11,6 +11,9 @@ function init() {
   // For the Home Page's jumbotron "blue wave" animation
   // (see function below for more details)
   waveLineDelay();
+
+  // Update the copyright year number on the footer to the current year
+  document.getElementById("copyright-year").textContent = getCurrentYear();
 }
 
 // Source referred to for help with the following onclick event handler function: https://stackoverflow.com/a/36695562
@@ -67,4 +70,8 @@ function waveLineDelay() {
     waveLine.style.animationDelay = delay + "s";
     delay = delay + 0.2;
   }
+}
+
+function getCurrentYear() {
+  return new Date().getFullYear();
 }

@@ -64,23 +64,29 @@
           <h3>What was my process for completing this project?</h3>
           <p>As I was still very much learning Ruby and Rails at the time, I adopted a compartmentalised, "prototype" development approach, with significant resourceful "Google'ing" if time permitted.</p>
           <h3>What would I do differently next time?</h3>
-          <p>I would very much make the front-end UI/UX more intuitive, clean and responsive looking. Time-constraints meant I was only able to get the website to MVP before submission. I would also flesh out wireframes in much more detail to help me with the UI creation.</p>
+          <p>The styling is very much incomplete, with lots of broken or non-developed CSS styling. I would very much make the front-end UI/UX more intuitive, clean and responsive looking. Time-constraints meant I was only able to get the website to MVP before submission, which meant sacrificing front-end aesthetics. I would also flesh out wireframes in much more detail to help me with the UI creation.</p>
           <div class="popup-content-border"></div>
           <h2>Source:</h2>
-          <p>
+          <h3>
+            GitHub Repo:
             <span class="bold" style="word-wrap: break-word">
               <a href="https://github.com/chullman/BubbleBuddies" target="_blank">https://github.com/chullman/BubbleBuddies</a>
             </span>
-          </p>
+          </h3>
           <h3>
-            Live Demo:
+            <i>(Update: October 2022)</i> Live Demo:
             <span class="bold" style="word-wrap: break-word">
-              <a href="https://bubblebuddies.chullman.com/" target="_blank">https://bubblebuddies.chullman.com/</a>
+              <a href="https://bubblebuddies.chullman.com/" target="_blank">https://bubblebuddies.chullman.com</a>
             </span>
           </h3>
           <div class="popup-content-border"></div>
           <h2>Key Technology:</h2>
-          <p>I had built this application using <span class="bold">Ruby on Rails v5.2.0</span> - a server-side web application framework written in Ruby based on the MVC structure.</p>
+          <h3><i>(Update: October 2022)</i> Current Tech:</h3>
+          <p>From the below original tech, I had migrated the Rails app from scratch onto <span class="bold">Ruby on Rails v6.1.7</span> to leverage the various advantages of Rails v6 from Rails v5. This also allowed me to deploy a livem public version of the web app on a cloud-based PaaS solution.
+          <p>Certained consumed, third-party API dependencies also had to be reconfigured. A new mail service provider and a new geocoding API were also sourced.</p>
+          <p>Please refer to the <i>README.md</i> contained in the <a href="https://github.com/chullman/BubbleBuddies" target="_blank">GitHub Repo link</a> for more technical specifics.</p>
+          <h3>Original Tech:</h3>
+          <p>I had built this application as a full-stack using <span class="bold">Ruby on Rails v5.2.0</span> - a server-side web application framework written in Ruby based on the MVC structure.</p>
           <p>I had designed and implemented a rudimentary relational database schema to be executed on a <span class="bold">PostgreSQL DBMS</span>.</p>
           <p>Certain existing publically sourced APIs were utilised such as Google Maps and Stripe.</p>
           <div class="popup-content-border"></div>
@@ -336,6 +342,9 @@
           </div>
         </footer>
         <!-- *END COMPONENT* -->
+        <footer class="footer-container copyright-container">
+          <p>Copyright ©<span id="copyright-year"></span> by Christopher Hullman</p>
+        </footer>
       </main>
     </div>
   </body>
