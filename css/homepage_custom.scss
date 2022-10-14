@@ -198,13 +198,14 @@ INTRO SECTION
 /*
 CARDS LINK SECTION
 */
+@media only screen and (min-width: 768px) {
+  #rope-background {
+    background-image: url(../assets/rope.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 
-#rope-background {
-  // background-image: url(../assets/rope.svg);
-  // background-repeat: no-repeat;
-  // background-position: center;
-
-  // background-color: white;
+    background-color: white;
+  }
 }
 
 #cards-container {
