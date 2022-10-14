@@ -32,6 +32,59 @@
   }
 }
 
+.cert-container {
+  @extend .generic-flex-container;
+
+  background-color: white;
+
+  div[class*='cert-logo'] {
+    border-bottom: 5px solid #b3b3b3;
+    margin: 10px 10px 10px 10px;
+  }
+
+  & > p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .cert-container-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+  
+    img {
+      padding: 10px;
+    }
+  }
+
+  .cert-container-subnote {
+    text-align: center;
+    font-size: 100%;
+    margin: 0;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .cert-container {
+
+    .cert-container-bottom {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+  }
+}
+
 #projects-container {
   display: flex;
   flex-direction: column;

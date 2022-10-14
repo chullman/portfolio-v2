@@ -1,27 +1,66 @@
-.generic-flex-container {
+.generic-flex-container, .cert-container {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.generic-flex-container > h2 {
+.generic-flex-container > h2, .cert-container > h2 {
   font-size: 2em;
   align-self: center;
   justify-self: center;
   text-align: center;
 }
-.generic-flex-container > p {
+.generic-flex-container > p, .cert-container > p {
   font-size: 1.2em;
   padding-left: 5%;
   padding-right: 5%;
 }
-.generic-flex-container li {
+.generic-flex-container li, .cert-container li {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
-.generic-flex-container > ul {
+.generic-flex-container > ul, .cert-container > ul {
   padding-left: 40px;
   padding-right: 2%;
 }
 
+.cert-container {
+  background-color: white;
+}
+.cert-container div[class*=cert-logo] {
+  border-bottom: 5px solid #b3b3b3;
+  margin: 10px 10px 10px 10px;
+}
+.cert-container > p {
+  text-align: center;
+  font-size: 1.5em;
+}
+.cert-container .cert-container-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cert-container .cert-container-bottom p {
+  text-align: center;
+}
+.cert-container .cert-container-bottom img {
+  padding: 10px;
+}
+.cert-container .cert-container-subnote {
+  text-align: center;
+  font-size: 100%;
+  margin: 0;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cert-container .cert-container-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 #projects-container {
   display: flex;
   flex-direction: column;
