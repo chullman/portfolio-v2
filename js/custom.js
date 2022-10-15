@@ -59,7 +59,7 @@ function showOrHideNavDropdown(e) {
       hamburgerDropdown.style.display = "block";
       swapHamburgerIcon("fa-bars", "fa-rectangle-xmark");
       hamburgerDropdown.style.animationName = "hamburger-dropdown-fade-in";
-      hamburgerDropdown.style.animationDuration = "0.5s";
+      hamburgerDropdown.style.animationDuration = "0.3s";
     } else {
       hamburgerDropdown.style.display = "";
       swapHamburgerIcon("fa-rectangle-xmark", "fa-bars");
