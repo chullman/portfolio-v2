@@ -56,11 +56,24 @@ JUMBOTRON SECTION
   position: static;
 
   border: 1px solid $wave-color;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 40px 0 0;
 
   // So all waves are rendered on screen to initial height before the wave-anim animation starts for each wave line
   transform: translateY(-160px);
   height: 160px;
+}
+
+// To add a slightly transparent tip to the top of each wave line to simulate a more "wave like" pattern
+.wave-line:after {
+  content: "";
+  height: 20px;
+  opacity: 15%;
+  width: 100%;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  left: 30%;
+  top: -3%;
 }
 
 @keyframes wave-anim {

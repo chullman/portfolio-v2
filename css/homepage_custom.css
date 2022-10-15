@@ -40,9 +40,21 @@ JUMBOTRON SECTION
           animation: wave-anim 2s infinite ease-in-out alternate;
   position: static;
   border: 1px solid #034078;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 40px 0 0;
   transform: translateY(-160px);
   height: 160px;
+}
+
+.wave-line:after {
+  content: "";
+  height: 20px;
+  opacity: 15%;
+  width: 100%;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  left: 30%;
+  top: -3%;
 }
 
 @-webkit-keyframes wave-anim {
