@@ -49,11 +49,9 @@ SUBPAGES TITLE HEADER
   #jumbo-header-front > #anchor {
     visibility: visible;
   }
-
   #jumbo-header-behind {
     height: 160px;
   }
-
   #jumbo-header-front {
     height: 160px;
     margin-top: -160px;
@@ -63,6 +61,4 @@ SUBPAGES TITLE HEADER
   #jumbo-header-front > h1 {
     font-size: 2.5rem;
   }
-}
-
-/*# sourceMappingURL=subpages_common_custom.css.map */
+}/*# sourceMappingURL=subpages_common_custom.css.map */

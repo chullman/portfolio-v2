@@ -51,13 +51,11 @@ h2 {
     width: 735px;
     height: 450px;
   }
-
   #portrait-container {
     margin: 0;
     justify-content: flex-end;
     align-items: flex-end;
   }
-
   #tag-container {
     padding-left: 40px;
   }
@@ -231,6 +229,4 @@ h2 {
   #interests-hobbies-images-container > img {
     max-width: 40%;
   }
-}
-
-/*# sourceMappingURL=aboutmepage_custom.css.map */
+}/*# sourceMappingURL=aboutmepage_custom.css.map */

@@ -36,12 +36,24 @@ JUMBOTRON SECTION
   margin-left: -5px;
   background: #034078;
   width: 30px;
-  animation: wave-anim 2s infinite ease-in-out alternate;
+  -webkit-animation: wave-anim 2s infinite ease-in-out alternate;
+          animation: wave-anim 2s infinite ease-in-out alternate;
   position: static;
   border: 1px solid #034078;
   border-radius: 20px 20px 0 0;
   transform: translateY(-160px);
   height: 160px;
+}
+
+@-webkit-keyframes wave-anim {
+  0% {
+    transform: translateY(-160px);
+    height: 160px;
+  }
+  100% {
+    transform: translateY(-190px);
+    height: 190px;
+  }
 }
 
 @keyframes wave-anim {
@@ -75,17 +87,31 @@ JUMBOTRON SECTION
   left: 40px;
   width: 150px;
   height: 150px;
-  animation-name: ship-water-anim;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  animation-direction: alternate;
+  -webkit-animation-name: ship-water-anim;
+          animation-name: ship-water-anim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 @media only screen and (min-width: 1280px) {
   #ship-brand-logo-withoutwave-container > #underwater-ship {
     left: 300px;
     width: 200px;
     height: 200px;
+  }
+}
+
+@-webkit-keyframes ship-water-anim {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-25px);
   }
 }
 
@@ -163,9 +189,21 @@ INTRO SECTION
 
 .bounce-arrow-anim {
   position: relative;
-  animation: arrow-bounce 0.5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  -webkit-animation: arrow-bounce 0.5s;
+          animation: arrow-bounce 0.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrow-bounce {
+  from {
+    top: 6px;
+  }
+  to {
+    top: 0px;
+  }
 }
 
 @keyframes arrow-bounce {
@@ -298,6 +336,4 @@ CARDS LINK SECTION
 .card-title {
   font-weight: bold;
   color: white;
-}
-
-/*# sourceMappingURL=homepage_custom.css.map */
+}/*# sourceMappingURL=homepage_custom.css.map */

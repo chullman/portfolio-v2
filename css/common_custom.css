@@ -5,6 +5,10 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .bold {
   font-weight: bold;
   font-size: 1.3rem;
@@ -76,7 +80,6 @@ body {
   #nav-hamburger-container {
     display: none;
   }
-
   #nav-horizontal-list-container {
     display: flex;
     flex-direction: row;
@@ -407,6 +410,4 @@ Column flex direction by default for mobile-first
   justify-content: center;
   box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
   background-color: white;
-}
-
-/*# sourceMappingURL=common_custom.css.map */
+}/*# sourceMappingURL=common_custom.css.map */
