@@ -155,7 +155,8 @@ body {
 
 #nav-hamburger-custom {
   color: $nav-hamburger-color;
-  margin-right: 20px;
+  text-align: center;
+  margin-left: 5%;
 }
 
 #hamburger-dropdown {
@@ -171,6 +172,17 @@ body {
 
   border: 5px solid $aesthetic-border-color;
   box-shadow: 10px 10px 10px gray;
+
+  opacity: 1;
+}
+
+@keyframes hamburger-dropdown-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #dropdown-content-container {

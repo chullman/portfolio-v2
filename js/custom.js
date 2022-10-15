@@ -18,6 +18,12 @@ function init() {
 
 // Source referred to for help with the following onclick event handler function: https://stackoverflow.com/a/36695562
 function showOrHideNavDropdown(e) {
+
+  const swapHamburgerIcon = function(iconFrom, iconTo) {
+      hamburgerButton.classList.remove(iconFrom);
+      hamburgerButton.classList.add(iconTo);
+  }
+
   var hamburgerButton = document.getElementById("nav-hamburger-custom");
   var hamburgerLinksText = document.getElementById("nav-hamburger-links-text");
   var hamburgerDropdown = document.getElementById("hamburger-dropdown");
@@ -44,16 +50,22 @@ function showOrHideNavDropdown(e) {
       // I DON'T KNOW WHY, but display has to be set to "" and not "none", to hide the dropdown box
       // I still don't know why this is this is case as of writing this comment (14/03/2022)
       hamburgerDropdown.style.display = "";
+      swapHamburgerIcon("fa-rectangle-xmark", "fa-bars");
     }
 
     // Else if the user clicks on the hamburger button or the above "links:" text, show or hide the link dropdown box depending on whether it's currently displaying or not
   } else if (e.target == hamburgerButton || e.target == hamburgerLinksText) {
     if (hamburgerDropdown.style.display == "") {
       hamburgerDropdown.style.display = "block";
+      swapHamburgerIcon("fa-bars", "fa-rectangle-xmark");
+      hamburgerDropdown.style.animationName = "hamburger-dropdown-fade-in";
+      hamburgerDropdown.style.animationDuration = "0.5s";
     } else {
       hamburgerDropdown.style.display = "";
+      swapHamburgerIcon("fa-rectangle-xmark", "fa-bars");
     }
   }
+
 }
 
 // Adds an increasingly longer animation delay for every wave line, left to right, in the jumbotron section on Home Page, to simulate a "wave" effect
