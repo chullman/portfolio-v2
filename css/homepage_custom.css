@@ -11,7 +11,7 @@ JUMBOTRON SECTION
   left: 0;
   z-index: 0;
   margin: 0;
-  background-image: url("../assets/jumbotron_background_transparent.jpg");
+  background-image: url("../assets/jumbotron_background_transparent.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -148,7 +148,7 @@ JUMBOTRON SECTION
 }
 
 .hull-highlight {
-  color: #fc9e49;
+  color: #034078;
 }
 
 /*
