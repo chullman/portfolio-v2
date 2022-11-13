@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.chullman.com/index.html</loc>
+        <loc>https://www.chullman.com/</loc>
         <lastmod>2022-10-14</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.chullman.com/subpages/webdev.html</loc>
+        <loc>https://www.chullman.com/subpages/webdev</loc>
         <lastmod>2022-10-14</lastmod>
     </url>
     <url>
-        <loc>https://www.chullman.com/subpages/csharp.html</loc>
+        <loc>https://www.chullman.com/subpages/csharp</loc>
         <lastmod>2022-10-14</lastmod>
     </url>
     <url>
-        <loc>https://www.chullman.com/subpages/support.html</loc>
+        <loc>https://www.chullman.com/subpages/support</loc>
         <lastmod>2022-10-14</lastmod>
     </url>
     <url>
-        <loc>https://www.chullman.com/subpages/aboutme.html</loc>
+        <loc>https://www.chullman.com/subpages/aboutme</loc>
         <lastmod>2022-10-14</lastmod>
     </url>
 </urlset>
