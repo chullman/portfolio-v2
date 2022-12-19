@@ -100,10 +100,11 @@
   & > h2 {
     font-size: 2em;
     text-align: center;
+    margin-bottom: 3%;
   }
 }
 
-#project-cards-container {
+.project-cards-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -167,7 +168,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #project-cards-container {
+  .project-cards-container {
     .project-card-content-container {
       margin-right: 5px;
       margin-left: 5px;

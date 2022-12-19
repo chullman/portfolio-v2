@@ -76,9 +76,10 @@
 #projects-container > h2 {
   font-size: 2em;
   text-align: center;
+  margin-bottom: 3%;
 }
 
-#project-cards-container {
+.project-cards-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -86,7 +87,7 @@
   justify-content: space-around;
   width: 100%;
 }
-#project-cards-container .project-card-content-container {
+.project-cards-container .project-card-content-container {
   background-color: #1A2530;
   position: relative;
   width: 100%;
@@ -98,22 +99,22 @@
   padding: 3%;
   transition: all 0.3s ease-in;
 }
-#project-cards-container .project-card-content-container h2,
-#project-cards-container .project-card-content-container h4 {
+.project-cards-container .project-card-content-container h2,
+.project-cards-container .project-card-content-container h4 {
   color: white;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 2rem;
 }
-#project-cards-container .project-card-content-container h2 {
+.project-cards-container .project-card-content-container h2 {
   font-size: 2.6rem;
   line-height: 1.25;
 }
-#project-cards-container .project-card-content-container h4 {
+.project-cards-container .project-card-content-container h4 {
   font-size: 1.4rem;
   line-height: 1.35;
 }
-#project-cards-container .project-card-content-container:hover {
+.project-cards-container .project-card-content-container:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -131,7 +132,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #project-cards-container .project-card-content-container {
+  .project-cards-container .project-card-content-container {
     margin-right: 5px;
     margin-left: 5px;
   }
