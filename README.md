@@ -1,12 +1,14 @@
 # Portfolio of Christopher (Chris) Hullman
 
-## Update (07/10/2022)
-**This source code is currently under development construction for public distribution of the below published live website of this *master* branch.**
+## Update (03/01/2023)
+**Note that multiple updated information and quality of user experience improvements has been made to the website since my original course studies assignment submission in 2022.**
 **For the original 'Coder Academy' 2022 assignment submission, please refer to Git branch *CA-original*.**
 
 ## Link to Live Website:
 
 [**https://www.chullman.com**](https://www.chullman.com/)
+
+# Original Assignment Submission
 
 ## Portfolio Description
 
